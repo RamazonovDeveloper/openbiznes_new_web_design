@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { AuthProvider } from '../context/authContext';
 import AuthGuard from '../components/auth/AuthGuard'
 import Head from 'next/head'
-
+import CompanyLayout from '../layouts/CompanyLayout';
 
 function MyApp({ Component, pageProps }) {
   return <>
@@ -14,7 +14,9 @@ function MyApp({ Component, pageProps }) {
     
     <AuthProvider>
       <AuthGuard>
-        <Component {...pageProps} />
+        <CompanyLayout>
+          <Component {...pageProps} />
+        </CompanyLayout>
       </AuthGuard>
     </AuthProvider>
   </>

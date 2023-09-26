@@ -3,9 +3,6 @@ import { useRouter } from 'next/router'
 import authConfig from '../configs/auth'
 import {companyInfo} from '../repositories/api'
 
-
-
-
 const AuthContext = createContext()
 
 const AuthProvider = ({children}) => {
@@ -19,7 +16,6 @@ const AuthProvider = ({children}) => {
       if (storedToken) {
         setCompany('data')
         setLoading(false)
-
 
         // await axios
         //   .get(authConfig.meEndpoint, {

@@ -1,8 +1,7 @@
 import { useAuth } from '../../../hooks/useAuth'
+
 export default function LoginPage() {
   const auth = useAuth()
-
-  console.log("auth => ", auth);
 
   return (
     <div>

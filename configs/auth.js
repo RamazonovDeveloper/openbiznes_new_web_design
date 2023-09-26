@@ -4,4 +4,4 @@ export default {
     registerEndpoint: '/jwt/register',
     storageTokenKeyName: 'access_token',
     onTokenExpiration: 'refresh_token' 
-  }
+}

@@ -3,12 +3,11 @@ import { useRouter } from 'next/router'
 import { useAuth } from '../../hooks/useAuth'
 import authConfig from '../../configs/auth'
 
-
 const AuthGuard = props => {
   const { children, fallback } = props
   const auth = useAuth()
   const router = useRouter()
-  
+
   useEffect(
     () => {
       console.log('auth ', auth)

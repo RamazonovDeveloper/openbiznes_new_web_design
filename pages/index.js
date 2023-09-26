@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { useAuth } from '../hooks/useAuth'
 import authConfig from '../configs/auth'
 
-
 const Home = () => {
   const auth = useAuth()
   const router = useRouter()
