@@ -5,6 +5,9 @@ import Head from 'next/head'
 import CompanyLayout from '../layouts/CompanyLayout';
 
 function MyApp({ Component, pageProps }) {
+  console.log(' ====> ', Component.getLayout);
+  const getLayout = Component.getLayout ?? (page => <CompanyLayout>{page}</CompanyLayout>)
+
   return <>
     <Head>
       <title>Open Banking - Единый пользовательский интерфейс для всех банков</title>
@@ -14,9 +17,7 @@ function MyApp({ Component, pageProps }) {
     
     <AuthProvider>
       <AuthGuard>
-        <CompanyLayout>
-          <Component {...pageProps} />
-        </CompanyLayout>
+          {getLayout(<Component {...pageProps} />)}
       </AuthGuard>
     </AuthProvider>
   </>

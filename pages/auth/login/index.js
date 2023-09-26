@@ -1,4 +1,5 @@
 import { useAuth } from '../../../hooks/useAuth'
+import BlankLayout from '../../../layouts/BlankLayout'
 
 export default function LoginPage() {
   const auth = useAuth()
@@ -11,3 +12,5 @@ export default function LoginPage() {
     </div>
   )
 }
+
+LoginPage.getLayout = page => <BlankLayout>{page}</BlankLayout>
