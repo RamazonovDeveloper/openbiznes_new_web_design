@@ -1,3 +1,3 @@
 import repository from "./repository";
 
-// export const posts = () => repository("posts/");
+export const companyInfo = () => repository.post("company/info");
