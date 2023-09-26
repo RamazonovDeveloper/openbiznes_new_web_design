@@ -1,19 +1,25 @@
-import Head from 'next/head'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import { useAuth } from '../hooks/useAuth'
+import authConfig from '../configs/auth'
 
-export default function Home() {
-  return (
-    <div >
-      <Head>
-        <title>Open Banking - Единый пользовательский интерфейс для всех банков</title>
-        <meta name="description" content="Open Banking – это омниканальная платформа дистанционного банковского обслуживания юридических лиц и индивидуальных предпринимателей с доступом к услугам разных банков через единую точку входа" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home = () => {
+  const auth = useAuth()
+  const router = useRouter()
+  console.log('index router ', router)
 
-      <main>
-      </main>
+  useEffect(() => {
+    if (!router.isReady) {
+      return
+    }
 
-      <footer>
-      </footer>
-    </div>
-  )
+    if (localStorage.getItem(authConfig.storageTokenKeyName) && auth.company !== null) {
+
+      router.replace(`/home`)
+    }
+  }, [])
+
+  return <h1>LOADING HOME PAGE</h1>
 }
+
+export default Home

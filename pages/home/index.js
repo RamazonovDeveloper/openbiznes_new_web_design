@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./home.module.css";
+
 export default function HomePage() {
+
   const [accountToggleActive, setAccountToggleActive] = useState(false);
   const [companyNameActive, setCompanyNameActive] = useState(false);
 
@@ -816,6 +818,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
