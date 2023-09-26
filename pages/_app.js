@@ -5,7 +5,6 @@ import Head from 'next/head'
 import CompanyLayout from '../layouts/CompanyLayout';
 
 function MyApp({ Component, pageProps }) {
-  console.log(' ====> ', Component.getLayout);
   const getLayout = Component.getLayout ?? (page => <CompanyLayout>{page}</CompanyLayout>)
 
   return <>
