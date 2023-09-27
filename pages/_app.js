@@ -4,6 +4,7 @@ import AuthGuard from '../components/auth/AuthGuard'
 import Head from 'next/head'
 import CompanyLayout from '../layouts/CompanyLayout';
 
+
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout ?? (page => <CompanyLayout>{page}</CompanyLayout>)
 

@@ -125,6 +125,10 @@
   margin: 0;
 }
 
+
+
+
+
 /* HOME PART STYLES */
 .home {
   flex-grow: 1;
@@ -368,6 +372,7 @@
 
 .home_main_transactions_filters_btns{
   display: flex;
+  padding-bottom: 20px;
 }
 
 .home_main_account_title {
@@ -392,6 +397,11 @@
   padding: 10px;
   border: 1px solid #D2D0D0;
   border-radius: 5px;
+  position: relative;
+}
+
+.home_main_transactions_filterBtn:last-child{
+  margin-left: 20px;
 }
 
 .home_main_transactions_filterBtn > p{
@@ -401,6 +411,30 @@
 
 .home_main_transactions_filterBtn > span{
   margin-right: 118px;
+}
+
+.home_main_transactions_filterBtn_icon{
+  transition: .5s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home_main_transactions_filterBtn_icon_active{
+  transform: rotate(180deg);
+}
+
+.home_main_transactions_filterBtn_icon_date_modal{
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  border-radius: 8.91px;
+  box-shadow: 0px 10px 60px 0px #0000001A;
+  padding: 8px;
+  top: 50px;
+  right: 0;
 }
 /* .home_main_account_items{
     overflow-y: scroll;

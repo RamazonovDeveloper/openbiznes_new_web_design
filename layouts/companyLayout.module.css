@@ -1,0 +1,19 @@
+.section {
+    color: black;
+    display: flex;
+  }
+
+  .home {
+    flex-grow: 1;
+    background-color: #eeeeee;
+    height: 100vh;
+  }
+  
+  .home_container {
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
