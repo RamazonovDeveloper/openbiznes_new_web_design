@@ -1,0 +1,143 @@
+.login {
+  display: flex;
+  height: 100vh;
+}
+
+.login_left {
+  width: 67.448%;
+  background: url('../../public/bg.png');
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login_left_logo {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+}
+
+.login_right {
+  width: 32.552%;
+  display: flex;
+  align-items: center;
+}
+
+.login_left_components {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 530px;
+  gap: 10px;
+}
+
+.login_left_components_item {
+  border: 1px solid #ffffff4d;
+  border-radius: 8.91px;
+  /* background: linear-gradient(
+      0deg,
+      rgba(244, 243, 243, 0.3),
+      rgba(244, 243, 243, 0.3)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)); */
+
+  background-color: rgba(255, 255, 255, 0.25);
+  /* background-color: red; */
+}
+
+.login_left_components_item {
+  font-family: Manrope;
+  font-size: 20px;
+  /* font-weight: 600; */
+  line-height: 25px;
+  letter-spacing: 0.3799999952316284px;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 20.5px 15px;
+}
+
+.login_left_components_item > p {
+  margin-top: 10px;
+}
+
+.login_right {
+  position: relative;
+}
+
+.login_right_top {
+  top: 40px;
+  right: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+}
+
+.login_right_top > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.login_right_bottom {
+  display: flex;
+  gap: 35px;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.login_right_middle {
+  display: flex;
+  flex-direction: column;
+  width: 426px;
+  margin-left: 90px;
+  /* justify-content: center; */
+}
+
+.login_right_middle > h4 {
+  font-family: Manrope;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.3499999940395355px;
+  text-align: center;
+}
+
+.login_right_middle > button {
+  background-color: #4e0f8a;
+  border: none;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 0;
+  border-radius: 5px;
+  margin-top: 45px;
+  margin-bottom: 8px;
+}
+
+.login_right_middle > p {
+  color: #777373;
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}

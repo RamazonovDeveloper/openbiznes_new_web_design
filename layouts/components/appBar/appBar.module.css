@@ -3,7 +3,7 @@
     border-bottom: 1px solid #d2d0d0;
     padding-bottom: 18px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   
   .home_navbar_wrapper_right {

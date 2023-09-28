@@ -1,0 +1,42 @@
+.my_btn {
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+
+/* MY STANDART BUTTON */
+
+.my_standart_btn {
+  width: 264px;
+  background-color: #4e0f8a;
+  color: white;
+}
+
+.my_standart_btn:hover {
+  background-color: #602796;
+}
+
+/* MY MINI BUTTON */
+.my_mini_btn {
+  width: 109px;
+}
+
+/* MY GRAY BUTTON MAIN STYLES */
+.my_gray {
+  background-color: #e8e8e8;
+  color: #342c2c;
+}
+
+.my_gray:hover {
+  background-color: #d2d0d0;
+}
