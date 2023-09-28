@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./myBtn.module.css";
 
-export default function MyStyledButton({ children, type, width }) {
+export default function ButtonComponent({ children, type, width }) {
 
     if(type == 'standart'){
         console.log("Standart buttton !!!!");
