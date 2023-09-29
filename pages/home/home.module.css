@@ -384,9 +384,9 @@
   margin: 0;
   margin-bottom: 20px;
 }
-
 .home_main_transactions_filterBtn{
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   font-family: Manrope;

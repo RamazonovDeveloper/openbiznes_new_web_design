@@ -1,32 +1,60 @@
-.account {
+.transaction {
   margin-top: 40px;
-  display: flex;
-  width: 100%;
-  height: 80vh;
+  min-width: 80vh;
 }
 
-.account_header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+.transaction_table {
+  margin-top: 20px;
 }
 
-.account_header_btn {
+.transaction_table_item {
+  padding: 12px 30px;
+  display: grid;
+  grid-template-columns: 19.4% 66.4% 14.2%;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.transaction_table_item_left {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  gap: 30px;
   font-family: Manrope;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
-  line-height: 25px;
-  letter-spacing: 0.035em;
-  text-align: center;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  /* text-align: center; */
+  color: #342c2c;
 }
 
-/*    FILTERS STYLES   */
+.transaction_table_item_left span {
+  color: #a5a1a1;
+}
 
-.account_header_filters {
+.transaction_table_item_middle {
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 400;
+}
+
+.transaction_table_item_right {
+  display: flex;
+  justify-content: space-between;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: center;
+  color: #2DC28D;
+}
+
+.transaction_table_item_right span{
+    color: #777373;
+}
+
+/* START FILTER STYLES */
+
+.transaction_header {
   display: flex;
 
   gap: 20px;
@@ -47,10 +75,6 @@
   border: 1px solid #d2d0d0;
   border-radius: 5px;
   position: relative;
-}
-
-.home_main_transactions_filterBtn:last-child {
-  margin-left: 20px;
 }
 
 .home_main_transactions_filterBtn > p {
@@ -76,7 +100,7 @@
 
 .home_main_transactions_filterBtn_icon_date_modal {
   /* width: 200px;
-    height: 150px; */
+      height: 150px; */
   background-color: white;
   position: absolute;
   z-index: 10;
@@ -183,132 +207,4 @@
   border-radius: 2px;
 }
 
-.account_table_head_item {
-  font-family: Manrope;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 13px;
-  letter-spacing: 0.06599999964237213px;
-  color: #342c2c;
-}
-
-.account_table_body {
-}
-
-.account_table_body_item {
-  font-family: Manrope;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: -0.07800000160932541px;
-  color: #342c2c;
-
-  display: grid;
-  grid-template-columns: 20.66% 16.99% 17.47% 19.83% 8.89% 13.04% 15px;
-
-  margin-top: 10px;
-  padding: 12px 30px;
-  border-bottom: 1px solid #eeeeee;
-  position: relative;
-}
-
-.account_table_body_item:hover {
-  background: linear-gradient(0deg, #eeeeee, #eeeeee),
-    linear-gradient(0deg, rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.6));
-}
-
-.account_table_body_item_element > span {
-  color: #a5a1a1;
-}
-
-.account_table_body_item_element_icon {
-  cursor: pointer;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-}
-
-.account_table_body_item_element_icon_modal {
-  box-shadow: 0px 10px 20px 0px #0000001a;
-  border-radius: 8.91px;
-  font-family: Manrope;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.23999999463558197px;
-  text-align: left;
-
-  padding: 8px 4px;
-  background-color: white;
-
-  position: absolute;
-  z-index: 5;
-  top: 90%;
-  right: 0px;
-}
-
-.account_table_body_item_element_icon_modal > div {
-  padding: 7px 16px;
-  border-bottom: 1px dashed #eeeeee;
-  width: max-content;
-}
-
-.account_table_body_item_element_icon_modal > div:last-child {
-  border-bottom: none;
-}
-
-.rekvizit_frame {
-  border-bottom: 1px solid #eeeeee;
-  padding: 20px 30px 10px;
-}
-
-.rekvizit_frame_item {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  font-family: Manrope;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: -0.07800000160932541px;
-  text-align: left;
-
-  border-bottom: 1px dashed #eeeeee;
-  padding: 7px 0;
-}
-
-.rekvizit_frame_item:last-child {
-  border: none;
-}
-
-.rekvizit_frame_item_title {
-  color: #a5a1a1;
-}
-
-.rekvizit_frame_item_data {
-  color: #342c2c;
-}
-
-.rekvizit_actions {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px 30px 12px;
-}
-
-.rekvizit_actions_btns {
-  display: flex;
-  gap: 20px;
-}
-
-.rekvizit_actions_btns_content{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-font-family: Manrope;
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-letter-spacing: 0px;
-text-align: center;
-
-}
+/* END FILTER STYLES */

@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./myBtn.module.css";
 
-export default function ButtonComponent({ children, type, width }) {
+export default function ButtonComponent({ children, type, width, padding }) {
 
-    if(type == 'standart'){
-        console.log("Standart buttton !!!!");
-    }
+    // if(type == 'standart'){
+    //     console.log("Standart buttton !!!!");
+    // }
     
   switch (type) {
     case "standart":
@@ -50,8 +50,8 @@ export default function ButtonComponent({ children, type, width }) {
     case "adaptive_gray":
       return (
         <button
-          className={`${styles.my_btn} ${styles.my_standart_btn}`}
-          style={{ width: width }}
+          className={`${styles.my_btn} ${styles.my_gray}`}
+          style={{ paddingLeft: padding, paddingRight: padding }}
         >
           {children}
         </button>
