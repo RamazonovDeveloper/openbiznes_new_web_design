@@ -11,7 +11,6 @@ const modalStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  
 };
 
 const modalCardStyle = {
@@ -19,7 +18,11 @@ const modalCardStyle = {
   width: "606px",
 };
 
-export default function MainModalComponent({ title, children }) {
+export default function MainModalComponent({
+  title,
+  children,
+  closeModalFunction,
+}) {
   // const { message , success, closeDialog } = props
 
   console.log(children);
@@ -30,6 +33,7 @@ export default function MainModalComponent({ title, children }) {
         <div className={styles.modal_card_header}>
           <p>{title}</p>
           <svg
+            onClick={closeModalFunction}
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -42,9 +46,7 @@ export default function MainModalComponent({ title, children }) {
             />
           </svg>
         </div>
-        <div className={styles.modal_card_body}>
-            {children}
-        </div>
+        <div className={styles.modal_card_body}>{children}</div>
       </div>
     </div>
   );

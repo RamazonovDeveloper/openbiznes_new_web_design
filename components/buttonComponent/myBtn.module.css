@@ -22,6 +22,11 @@
   color: white;
 }
 
+.my_adaptive_btn {
+  background-color: #4e0f8a;
+  color: white;
+}
+
 .my_standart_btn:hover {
   background-color: #602796;
 }

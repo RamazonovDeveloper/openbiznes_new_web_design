@@ -3,6 +3,11 @@
   min-width: 80vh;
 }
 
+/* .transaction_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+} */
+
 .transaction_table {
   margin-top: 20px;
 }
@@ -11,7 +16,15 @@
   padding: 12px 30px;
   display: grid;
   grid-template-columns: 19.4% 66.4% 14.2%;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* .transaction_table_item:last-child{
+  border: none;
+} */
+
+.transaction_table_item_active {
+  background-color: #eeeeee99;
 }
 
 .transaction_table_item_left {
@@ -45,12 +58,118 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   text-align: center;
-  color: #2DC28D;
+  color: #2dc28d;
 }
 
-.transaction_table_item_right span{
-    color: #777373;
+.transaction_table_item_right span {
+  color: #777373;
 }
+
+.transaction_table_item_right > div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: #1d1515;
+}
+
+.transaction_table_item_right > div > span {
+  color: #1d1515;
+  position: relative;
+}
+
+.transaction_table_item_right > div > span::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #1ab759;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -10px;
+  border-radius: 50%;
+}
+
+.transaction_table_item_accordion {
+  background-color: #eeeeee99;
+  padding: 16px 30px;
+
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+
+  /* display: grid;
+  grid-template-columns: 45.84% 48.55%;
+  gap: 78px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 65px;
+  padding-left: 90px;
+}
+
+.transaction_table_item_accordion_header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.transaction_table_item_accordion_header_btns {
+  display: flex;
+  gap: 20px;
+}
+
+.transaction_table_item_accordion_header_btns button {
+  font-size: 12px;
+}
+
+.transaction_table_item_accordion_header_btns div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+
+.transaction_table_item_accordion_body{
+  width: 600px;
+}
+
+.transaction_table_item_accordion_body_item{
+  margin-top: 30px;
+}
+
+.transaction_table_item_accordion_body_th{
+  padding: 5px 0;
+}
+
+.transaction_table_item_accordion_body_col {
+  display: grid;
+  grid-template-columns: 210px 2fr;
+  border-bottom: 1px dashed #e8e8e8;
+  padding: 7px 0;
+}
+
+.transaction_table_item_accordion_body_col:last-child{
+  border: none;
+}
+
+.transaction_table_item_accordion_body_col h4 {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+  color: #a5a1a1;
+}
+
+
+/* 
+  210
+  606
+*/
+
+
 
 /* START FILTER STYLES */
 
@@ -144,6 +263,7 @@
   height: 1px;
   border-bottom: 1px dashed #eeeeee;
 }
+
 
 .home_main_transactions_filterBtn_icon_date_modal_date {
   display: flex;

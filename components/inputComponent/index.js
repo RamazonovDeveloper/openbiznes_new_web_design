@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styles from './myInput.module.css'
 
-export default function InputComponent({children, error}) {
+export default function InputComponent({children, error, placeholder}) {
 
   return (
-    <div className={`${styles.myInput} ${error && styles.myInput_invalid}`}>
+    <input type='text' className={`${styles.myInput} ${error && styles.myInput_invalid}`} placeholder={placeholder}>
       {children}
-    </div>
+    </input>
   )
 }

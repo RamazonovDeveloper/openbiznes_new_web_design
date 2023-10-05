@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import styles from "./home.module.css";
+import HomeHeader from "../../views/home/header/homeHeader";
+import HomeAccounts from "../../views/home/accounts/homeAccounts";
+import HomeDocuments from "../../views/home/documents/homeDocuments";
+import HomeTransactions from "../../views/home/transactions/homeTransactions";
 
 export default function HomePage() {
-  const [dateFilter, setDateFilter] = useState(false);
-  const [typeTransaction, setTypeTransaction] = useState(false);
+  // const [dateFilter, setDateFilter] = useState(false);
+  // const [typeTransaction, setTypeTransaction] = useState(false);
 
   // useEffect(() => {
   //   window.addEventListener("click", function(event) {
@@ -318,13 +322,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>  */}
 
-      {/* <div className={styles.home}>
-        <div className={styles.home_container}> */}
       {/* NAVBAR */}
 
-      {/* <div className={styles.home_navbar}>
+       {/* <div className={styles.home_navbar}>
             <div className={styles.home_navbar_wrapper}>
               <div className={styles.home_navbar_wrapper_right}>
                 <div className={styles.home_navbar_balance_in_usd}>
@@ -397,7 +399,9 @@ export default function HomePage() {
 
       {/* MAIN SECTION BTNS */}
 
-      <div className={styles.home_main_header}>
+      <HomeHeader />
+
+      {/* <div className={styles.home_main_header}>
         <div className={styles.home_main_header_texts}>
           <h4>Добрый день, Анна</h4>
           <p>Посмотрите все финансовые действия по вашей компании</p>
@@ -423,7 +427,8 @@ export default function HomePage() {
 
       <div className={styles.home_main}>
         <div className={styles.home_main_left}>
-          <div className={styles.home_main_account}>
+          <HomeAccounts />
+          {/* <div className={styles.home_main_account}>
             <h2 className={styles.home_main_account_title}>Счета</h2>
             <div className={styles.home_main_account_items}>
               <div className={styles.home_main_account_items_item}>
@@ -586,41 +591,10 @@ export default function HomePage() {
                   10 000 000 000,00 <span>UZS</span>
                 </div>
               </div>
-              {/* <div className={styles.home_main_account_items_item}>
-                    <div className={styles.home_main_account_items_item_left}>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_1378_14340)">
-                          <rect width="30" height="30" rx="15" fill="#EEEEEE" />
-                          <path
-                            d="M8.33414 20.165C7.71448 20.165 7.16631 20.0385 6.68964 19.7855C6.21664 19.5288 5.84631 19.1713 5.57864 18.713C5.31098 18.251 5.17714 17.7083 5.17714 17.085V12.0855L6.34314 12.08V17.0245C6.34314 17.3618 6.39998 17.6588 6.51364 17.9155C6.62731 18.1722 6.77948 18.3867 6.97014 18.559C7.16081 18.7313 7.37348 18.8615 7.60814 18.9495C7.84648 19.0375 8.08848 19.0815 8.33414 19.0815C8.58348 19.0815 8.82548 19.0375 9.06014 18.9495C9.29848 18.8578 9.51298 18.7258 9.70364 18.5535C9.89431 18.3812 10.0446 18.1667 10.1546 17.91C10.2683 17.6533 10.3251 17.3582 10.3251 17.0245V12.08H11.4911V17.085C11.4911 17.7047 11.3573 18.2455 11.0896 18.7075C10.822 19.1695 10.4498 19.5288 9.97315 19.7855C9.50014 20.0385 8.95381 20.165 8.33414 20.165ZM12.8757 20V19.8185L16.9182 13.1635H13.0957V12.08H18.8927V12.267L14.8722 18.911H18.8212V20H12.8757ZM23.1548 20.165C22.5864 20.165 22.0731 20.0678 21.6148 19.8735C21.1601 19.6755 20.7843 19.395 20.4873 19.032C20.1939 18.6653 20.0033 18.2308 19.9153 17.7285L21.1143 17.547C21.2353 18.031 21.4883 18.4087 21.8733 18.68C22.2583 18.9477 22.7074 19.0815 23.2208 19.0815C23.5398 19.0815 23.8331 19.032 24.1008 18.933C24.3684 18.8303 24.5829 18.6855 24.7443 18.4985C24.9093 18.3078 24.9918 18.0805 24.9918 17.8165C24.9918 17.6735 24.9661 17.547 24.9148 17.437C24.8671 17.327 24.7993 17.2317 24.7113 17.151C24.6269 17.0667 24.5224 16.9952 24.3978 16.9365C24.2768 16.8742 24.1429 16.821 23.9963 16.777L21.9668 16.1775C21.7688 16.1188 21.5671 16.0437 21.3618 15.952C21.1564 15.8567 20.9676 15.7338 20.7953 15.5835C20.6266 15.4295 20.4891 15.2407 20.3828 15.017C20.2764 14.7897 20.2233 14.5147 20.2233 14.192C20.2233 13.7043 20.3479 13.2918 20.5973 12.9545C20.8503 12.6135 21.1913 12.3568 21.6203 12.1845C22.0493 12.0085 22.5296 11.9205 23.0613 11.9205C23.5966 11.9278 24.0751 12.0232 24.4968 12.2065C24.9221 12.3898 25.2741 12.6538 25.5528 12.9985C25.8351 13.3395 26.0294 13.7538 26.1358 14.2415L24.9038 14.4505C24.8488 14.1535 24.7314 13.8987 24.5518 13.686C24.3721 13.4697 24.1521 13.3047 23.8918 13.191C23.6314 13.0737 23.3491 13.0132 23.0448 13.0095C22.7514 13.0022 22.4819 13.0462 22.2363 13.1415C21.9943 13.2368 21.7999 13.3707 21.6533 13.543C21.5103 13.7153 21.4388 13.9133 21.4388 14.137C21.4388 14.357 21.5029 14.5348 21.6313 14.6705C21.7596 14.8062 21.9173 14.9143 22.1043 14.995C22.2949 15.072 22.4838 15.1362 22.6708 15.1875L24.1338 15.6C24.3171 15.6513 24.5243 15.721 24.7553 15.809C24.9899 15.8933 25.2154 16.0125 25.4318 16.1665C25.6518 16.3205 25.8333 16.5258 25.9763 16.7825C26.1193 17.0355 26.1908 17.3545 26.1908 17.7395C26.1908 18.1392 26.1101 18.4912 25.9488 18.7955C25.7874 19.0962 25.5656 19.3492 25.2833 19.5545C25.0046 19.7562 24.6819 19.9083 24.3153 20.011C23.9486 20.1137 23.5618 20.165 23.1548 20.165Z"
-                            fill="#777373"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_1378_14340">
-                            <rect width="30" height="30" rx="15" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <div>
-                        <h3>АКБ “Агробанк”</h3>
-                        <p>0000 0000 0000 0000 0000</p>
-                        <p>Текущий (расчетный)счет</p>
-                      </div>
-                    </div>
-                    <div className={styles.home_main_account_items_item_right}>
-                    10 000 000 000,00 <span>UZS</span>
-                    </div>
-                  </div> */}
             </div>
-          </div>
-          <div className={styles.home_main_documents}>
+          </div> */}
+          <HomeDocuments/>
+          {/* <div className={styles.home_main_documents}>
             <h2 className={styles.home_main_account_title}>Документы</h2>
             <div className={styles.home_main_account_items}>
               <div className={styles.home_main_account_items_item}>
@@ -652,9 +626,11 @@ export default function HomePage() {
                 </h4>
               </div>
             </div>
-          </div>
+          </div> */}
+
         </div>
-        <div className={styles.home_main_transactions}>
+        <HomeTransactions/>
+        {/* <div className={styles.home_main_transactions}>
           <div className={styles.home_main_transactions_filters}>
             <h2 className={styles.home_main_account_title}>Транзакции</h2>
             <div className={styles.home_main_transactions_filters_btns}>
@@ -701,12 +677,22 @@ export default function HomePage() {
                     }
                   >
                     <button
-                      className={
-                        `${styles.home_main_transactions_filterBtn_icon_date_modal_btn} ${dateFilter && styles.home_main_transactions_filterBtn_icon_date_modal_btn_active}`
-                      }
+                      className={`${
+                        styles.home_main_transactions_filterBtn_icon_date_modal_btn
+                      } ${
+                        dateFilter &&
+                        styles.home_main_transactions_filterBtn_icon_date_modal_btn_active
+                      }`}
                     >
                       Неделя
-                      <div className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon} ${dateFilter && styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active}`}>
+                      <div
+                        className={`${
+                          styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon
+                        } ${
+                          dateFilter &&
+                          styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active
+                        }`}
+                      >
                         <svg
                           width="21"
                           height="20"
@@ -722,12 +708,12 @@ export default function HomePage() {
                       </div>
                     </button>
                     <button
-                      className={
-                        `${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`
-                      }
+                      className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`}
                     >
                       Месяц
-                      <div className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}>
+                      <div
+                        className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}
+                      >
                         <svg
                           width="21"
                           height="20"
@@ -742,17 +728,39 @@ export default function HomePage() {
                         </svg>
                       </div>
                     </button>
-                    <div className={styles.home_main_transactions_filterBtn_icon_date_modal_line}></div>
-                    <button className={styles.home_main_transactions_filterBtn_icon_date_modal_btn}>За период</button>
-                    <div className={styles.home_main_transactions_filterBtn_icon_date_modal_date}>
-                      <p>С</p>  
+                    <div
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_line
+                      }
+                    ></div>
+                    <button
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_btn
+                      }
+                    >
+                      За период
+                    </button>
+                    <div
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_date
+                      }
+                    >
+                      <p>С</p>
                       <div>Input</div>
                     </div>
-                    <div className={styles.home_main_transactions_filterBtn_icon_date_modal_date}>
-                      <p>По</p>  
+                    <div
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_date
+                      }
+                    >
+                      <p>По</p>
                       <div>Input</div>
                     </div>
-                    <div className={styles.home_main_transactions_filterBtn_icon_date_modal_btns}>
+                    <div
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_btns
+                      }
+                    >
                       <button>Сбросить</button>
                       <button>Применить</button>
                     </div>
@@ -785,78 +793,82 @@ export default function HomePage() {
                 </div>
                 {typeTransaction && (
                   <div
-                  className={
-                    styles.home_main_transactions_filterBtn_icon_date_modal
-                  }
-                >
-                  <button
                     className={
-                      `${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`
+                      styles.home_main_transactions_filterBtn_icon_date_modal
                     }
                   >
-                    Все типы транзакций
-                    <div className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}>
-                      <svg
-                        width="21"
-                        height="20"
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`}
+                    >
+                      Все типы транзакций
+                      <div
+                        className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}
                       >
-                        <path
-                          d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
-                          fill="#4E0F8A"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button
-                    className={
-                      `${styles.home_main_transactions_filterBtn_icon_date_modal_btn} ${styles.home_main_transactions_filterBtn_icon_date_modal_btn_active}`
-                    }
-                  >
-                    Поступления
-                    <div className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}  ${ styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active}`}>
-                      <svg
-                        width="21"
-                        height="20"
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        <svg
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
+                            fill="#4E0F8A"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <button
+                      className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn} ${styles.home_main_transactions_filterBtn_icon_date_modal_btn_active}`}
+                    >
+                      Поступления
+                      <div
+                        className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}  ${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active}`}
                       >
-                        <path
-                          d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
-                          fill="#4E0F8A"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button
-                    className={
-                      `${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`
-                    }
-                  >
-                    Списания
-                    <div className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}>
-                      <svg
-                        width="21"
-                        height="20"
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        <svg
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
+                            fill="#4E0F8A"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <button
+                      className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn}`}
+                    >
+                      Списания
+                      <div
+                        className={`${styles.home_main_transactions_filterBtn_icon_date_modal_btn_icon}`}
                       >
-                        <path
-                          d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
-                          fill="#4E0F8A"
-                        />
-                      </svg>
+                        <svg
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.4869 3.99345C18.3137 3.99861 18.1493 4.071 18.0285 4.19528L7.83323 14.3906L3.63791 10.1953C3.57648 10.1313 3.5029 10.0802 3.42149 10.045C3.34007 10.0098 3.25244 9.99124 3.16375 9.99034C3.07506 9.98944 2.98707 10.0062 2.90496 10.0398C2.82284 10.0733 2.74824 10.1229 2.68552 10.1856C2.6228 10.2483 2.57322 10.3229 2.5397 10.405C2.50617 10.4871 2.48937 10.5751 2.49027 10.6638C2.49117 10.7525 2.50976 10.8401 2.54495 10.9216C2.58014 11.003 2.63122 11.0766 2.69521 11.138L7.36187 15.8047C7.4869 15.9296 7.65645 15.9998 7.83323 15.9998C8.01001 15.9998 8.17955 15.9296 8.30458 15.8047L18.9712 5.13799C19.0676 5.04434 19.1334 4.92378 19.16 4.7921C19.1867 4.66042 19.1729 4.52377 19.1205 4.40004C19.0682 4.27632 18.9797 4.1713 18.8666 4.09875C18.7535 4.02619 18.6212 3.98949 18.4869 3.99345Z"
+                            fill="#4E0F8A"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <div
+                      className={
+                        styles.home_main_transactions_filterBtn_icon_date_modal_btns
+                      }
+                    >
+                      <button>Сбросить</button>
+                      <button>Применить</button>
                     </div>
-                  </button>
-                  <div className={styles.home_main_transactions_filterBtn_icon_date_modal_btns}>
-                    <button>Сбросить</button>
-                    <button>Применить</button>
                   </div>
-                </div>
                 )}
               </button>
             </div>
@@ -966,7 +978,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
+        </div>  */}
       </div>
 
       {/* </div> */}

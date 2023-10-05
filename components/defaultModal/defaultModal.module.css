@@ -1,0 +1,28 @@
+.successful {
+  /* display: flex; */
+}
+
+.successful_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.successful_btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px 12px;
+  border-top: 1px solid #eeeeee;
+}
+
+.btn_text {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+}

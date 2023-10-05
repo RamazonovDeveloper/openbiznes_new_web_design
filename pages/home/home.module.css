@@ -525,11 +525,11 @@
 /* .home_main_account_items{
     overflow-y: scroll;
 } */
-
 .home_main_account_items_item {
   padding: 12px 0;
   display: flex;
   justify-content: space-between;
+
   /* align-items: center; */
   border-bottom: 1px solid #eeeeee;
 }

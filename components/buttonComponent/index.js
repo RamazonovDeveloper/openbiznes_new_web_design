@@ -1,16 +1,26 @@
 import React from "react";
 import styles from "./myBtn.module.css";
 
-export default function ButtonComponent({ children, type, width, padding }) {
+export default function ButtonComponent({
+  children,
+  type,
+  width,
+  padding,
+  fontSize,
+  height,
+  handleClick,
+}) {
+  // if(type == 'standart'){
+  //     console.log("Standart buttton !!!!");
+  // }
 
-    // if(type == 'standart'){
-    //     console.log("Standart buttton !!!!");
-    // }
-    
   switch (type) {
     case "standart":
       return (
-        <button className={`${styles.my_btn} ${styles.my_standart_btn}`}>
+        <button
+          className={`${styles.my_btn} ${styles.my_standart_btn}`}
+          onClick={handleClick}
+        >
           {children}
         </button>
       );
@@ -18,6 +28,7 @@ export default function ButtonComponent({ children, type, width, padding }) {
       return (
         <button
           className={`${styles.my_btn} ${styles.my_standart_btn} ${styles.my_mini_btn}`}
+          onClick={handleClick}
         >
           {children}
         </button>
@@ -25,8 +36,9 @@ export default function ButtonComponent({ children, type, width, padding }) {
     case "adaptive":
       return (
         <button
-          className={`${styles.my_btn} ${styles.my_standart_btn}`}
-          style={{ width: width }}
+          className={`${styles.my_btn} ${styles.my_adaptive_btn}`}
+          style={{ padding: ` 0 ${padding}`, height:height, fontSize:fontSize}}
+          onClick={handleClick}
         >
           {children}
         </button>
@@ -35,6 +47,7 @@ export default function ButtonComponent({ children, type, width, padding }) {
       return (
         <button
           className={`${styles.my_btn} ${styles.my_standart_btn} ${styles.my_gray}`}
+          onClick={handleClick}
         >
           {children}
         </button>
@@ -43,6 +56,7 @@ export default function ButtonComponent({ children, type, width, padding }) {
       return (
         <button
           className={`${styles.my_btn} ${styles.my_standart_btn} ${styles.my_mini_btn} ${styles.my_gray}`}
+          onClick={handleClick}
         >
           {children}
         </button>
@@ -51,7 +65,14 @@ export default function ButtonComponent({ children, type, width, padding }) {
       return (
         <button
           className={`${styles.my_btn} ${styles.my_gray}`}
-          style={{ paddingLeft: padding, paddingRight: padding }}
+          style={{
+            paddingLeft: padding,
+            paddingRight: padding,
+            fontSize: `${fontSize || "15px"}`,
+            height: height,
+            alignItems: "center",
+          }}
+          onClick={handleClick}
         >
           {children}
         </button>
