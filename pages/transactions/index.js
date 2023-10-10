@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./transactions.module.css";
 import CardComponent from "../../components/cardComponent";
 import ButtonComponent from "../../components/buttonComponent";
+import SaveToggleButton from "../../components/saveToggleBtnComponent";
 
 export default function TransactionsPage() {
   const [dateFilter, setDateFilter] = useState(false);
@@ -283,7 +284,9 @@ export default function TransactionsPage() {
           <div className={styles.transaction_table}>
             <div className="">
               <div
-                className={`${styles.transaction_table_item} ${ accordion == '1' && styles.transaction_table_item_active}`}
+                className={`${styles.transaction_table_item} ${
+                  accordion == "1" && styles.transaction_table_item_active
+                }`}
               >
                 <div className={styles.transaction_table_item_left}>
                   <svg
@@ -293,20 +296,20 @@ export default function TransactionsPage() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_1505_10877)">
+                    <g clipPath="url(#clip0_1505_10877)">
                       <rect
                         width="30"
                         height="30"
                         rx="15"
                         fill="#EEEEEE"
-                        fill-opacity="0.6"
+                        fillOpacity="0.6"
                       />
                       <path
                         d="M20.25 20.25H14.75M20.25 20.25V14.75M20.25 20.25L9.75 9.75"
                         stroke="#2DC28D"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </g>
                     <defs>
@@ -335,7 +338,11 @@ export default function TransactionsPage() {
                   <p>
                     +10 000 000 000,00 <span>UZS</span>
                   </p>
-                  <div onClick={() => accordion == '1' ? setAccordion(false) : setAccordion('1')}>
+                  <div
+                    onClick={() =>
+                      accordion == "1" ? setAccordion(false) : setAccordion("1")
+                    }
+                  >
                     <svg
                       width="15"
                       height="15"
@@ -351,7 +358,7 @@ export default function TransactionsPage() {
                   </div>
                 </div>
               </div>
-              {accordion == '1' && (
+              {accordion == "1" && (
                 <div className={styles.transaction_table_item_accordion}>
                   <div className={styles.transaction_table_item_accordion_body}>
                     <div>
@@ -504,7 +511,12 @@ export default function TransactionsPage() {
                         styles.transaction_table_item_accordion_header_btns
                       }
                     >
-                      <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
+                      <ButtonComponent
+                        type={"adaptive_gray"}
+                        padding={"16px"}
+                        height={"32px"}
+                        fontSize={"12px"}
+                      >
                         <div>
                           Повторить
                           <svg
@@ -521,7 +533,12 @@ export default function TransactionsPage() {
                           </svg>
                         </div>
                       </ButtonComponent>
-                      <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
+                      <ButtonComponent
+                        type={"adaptive_gray"}
+                        padding={"16px"}
+                        height={"32px"}
+                        fontSize={"12px"}
+                      >
                         <div>
                           Редактировать
                           <svg
@@ -538,7 +555,12 @@ export default function TransactionsPage() {
                           </svg>
                         </div>
                       </ButtonComponent>
-                      <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
+                      <ButtonComponent
+                        type={"adaptive_gray"}
+                        padding={"16px"}
+                        height={"32px"}
+                        fontSize={"12px"}
+                      >
                         <div>
                           Печатная форма
                           <svg
@@ -548,7 +570,7 @@ export default function TransactionsPage() {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <g clip-path="url(#clip0_1530_6851)">
+                            <g clipPath="url(#clip0_1530_6851)">
                               <path
                                 d="M3.95973 0.719971V5.39997H1.79973C1.20754 5.39997 0.719727 5.88778 0.719727 6.47997V12.96C0.719727 13.5522 1.20754 14.04 1.79973 14.04H3.95973V17.28H14.0397V14.04H16.1997C16.7919 14.04 17.2797 13.5522 17.2797 12.96V6.47997C17.2797 5.88778 16.7919 5.39997 16.1997 5.39997H14.0397V0.719971H3.95973ZM4.67973 1.43997H13.3197V5.39997H4.67973V1.43997ZM1.79973 6.11997H4.25926C4.29813 6.1264 4.3378 6.1264 4.37668 6.11997H13.6193C13.6581 6.1264 13.6978 6.1264 13.7367 6.11997H16.1997C16.4031 6.11997 16.5597 6.27656 16.5597 6.47997V12.96C16.5597 13.1634 16.4031 13.32 16.1997 13.32H14.0397V10.08H13.6797H3.95973V13.32H1.79973C1.59632 13.32 1.43973 13.1634 1.43973 12.96V6.47997C1.43973 6.27656 1.59632 6.11997 1.79973 6.11997ZM14.7597 7.19997C14.5688 7.19997 14.3856 7.27583 14.2506 7.41085C14.1156 7.54588 14.0397 7.72901 14.0397 7.91997C14.0397 8.11093 14.1156 8.29406 14.2506 8.42909C14.3856 8.56411 14.5688 8.63997 14.7597 8.63997C14.9507 8.63997 15.1338 8.56411 15.2688 8.42909C15.4039 8.29406 15.4797 8.11093 15.4797 7.91997C15.4797 7.72901 15.4039 7.54588 15.2688 7.41085C15.1338 7.27583 14.9507 7.19997 14.7597 7.19997ZM4.67973 10.8H13.3197V13.6195C13.3133 13.6584 13.3133 13.698 13.3197 13.7369V16.56H4.67973V13.7404C4.68615 13.7016 4.68615 13.6619 4.67973 13.623V10.8ZM6.11973 11.88C6.07202 11.8793 6.02466 11.8881 5.98039 11.9059C5.93612 11.9237 5.89583 11.9501 5.86186 11.9836C5.82788 12.0171 5.80091 12.057 5.78249 12.101C5.76408 12.145 5.7546 12.1923 5.7546 12.24C5.7546 12.2877 5.76408 12.3349 5.78249 12.3789C5.80091 12.4229 5.82788 12.4629 5.86186 12.4963C5.89583 12.5298 5.93612 12.5563 5.98039 12.574C6.02466 12.5918 6.07202 12.6006 6.11973 12.6H11.8797C11.9274 12.6006 11.9748 12.5918 12.0191 12.574C12.0633 12.5563 12.1036 12.5298 12.1376 12.4963C12.1716 12.4629 12.1985 12.4229 12.217 12.3789C12.2354 12.3349 12.2449 12.2877 12.2449 12.24C12.2449 12.1923 12.2354 12.145 12.217 12.101C12.1985 12.057 12.1716 12.0171 12.1376 11.9836C12.1036 11.9501 12.0633 11.9237 12.0191 11.9059C11.9748 11.8881 11.9274 11.8793 11.8797 11.88H6.11973ZM6.11973 13.32C6.07202 13.3193 6.02466 13.3281 5.98039 13.3459C5.93612 13.3637 5.89583 13.3901 5.86186 13.4236C5.82788 13.4571 5.80091 13.497 5.78249 13.541C5.76408 13.585 5.7546 13.6323 5.7546 13.68C5.7546 13.7277 5.76408 13.7749 5.78249 13.8189C5.80091 13.8629 5.82788 13.9029 5.86186 13.9363C5.89583 13.9698 5.93612 13.9963 5.98039 14.014C6.02466 14.0318 6.07202 14.0406 6.11973 14.04H10.4397C10.4874 14.0406 10.5348 14.0318 10.5791 14.014C10.6233 13.9963 10.6636 13.9698 10.6976 13.9363C10.7316 13.9029 10.7585 13.8629 10.777 13.8189C10.7954 13.7749 10.8049 13.7277 10.8049 13.68C10.8049 13.6323 10.7954 13.585 10.777 13.541C10.7585 13.497 10.7316 13.4571 10.6976 13.4236C10.6636 13.3901 10.6233 13.3637 10.5791 13.3459C10.5348 13.3281 10.4874 13.3193 10.4397 13.32H6.11973ZM6.11973 14.76C6.07202 14.7593 6.02466 14.7681 5.98039 14.7859C5.93612 14.8037 5.89583 14.8301 5.86186 14.8636C5.82788 14.8971 5.80091 14.937 5.78249 14.981C5.76408 15.025 5.7546 15.0723 5.7546 15.12C5.7546 15.1677 5.76408 15.2149 5.78249 15.2589C5.80091 15.3029 5.82788 15.3429 5.86186 15.3763C5.89583 15.4098 5.93612 15.4363 5.98039 15.454C6.02466 15.4718 6.07202 15.4806 6.11973 15.48H11.8797C11.9274 15.4806 11.9748 15.4718 12.0191 15.454C12.0633 15.4363 12.1036 15.4098 12.1376 15.3763C12.1716 15.3429 12.1985 15.3029 12.217 15.2589C12.2354 15.2149 12.2449 15.1677 12.2449 15.12C12.2449 15.0723 12.2354 15.025 12.217 14.981C12.1985 14.937 12.1716 14.8971 12.1376 14.8636C12.1036 14.8301 12.0633 14.8037 12.0191 14.7859C11.9748 14.7681 11.9274 14.7593 11.8797 14.76H6.11973Z"
                                 fill="black"
@@ -562,23 +584,9 @@ export default function TransactionsPage() {
                           </svg>
                         </div>
                       </ButtonComponent>
-                      <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
-                        <div>
-                          Сохранить
-                          <svg
-                            width="13"
-                            height="14"
-                            viewBox="0 0 13 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.04004 4.92004L6.50004 10.64L11.96 4.92004H1.04004Z"
-                              fill="#777373"
-                            />
-                          </svg>
-                        </div>
-                      </ButtonComponent>
+                      <div style={{display:"unset"}}>
+                        <SaveToggleButton />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -598,14 +606,14 @@ export default function TransactionsPage() {
                     height="30"
                     rx="15"
                     fill="#EEEEEE"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                   <path
                     d="M9.75 9.75H15.25M9.75 9.75V15.25M9.75 9.75L20.25 20.25"
                     stroke="#D23232"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
 

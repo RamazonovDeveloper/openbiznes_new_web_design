@@ -1,0 +1,26 @@
+.filters {
+    width: 280px;
+}
+
+.select_modal_item {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+  padding: 7px 16px;
+
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.select_modal_item:last-child {
+  border-bottom: none;
+}
+
+.select_modal_item:hover {
+  background-color: #ede7f3;
+  border-bottom: none;
+  border-radius: 5px;
+}

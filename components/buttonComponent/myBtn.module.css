@@ -45,3 +45,15 @@
 .my_gray:hover {
   background-color: #d2d0d0;
 }
+
+.my_adptive_gray{
+  background-color: #e8e8e8;
+  color: #342c2c;
+}
+
+@media screen and (max-width:1500px) {
+  .my_btn, 
+  .my_gray{
+    font-size: 13px;
+  }
+}

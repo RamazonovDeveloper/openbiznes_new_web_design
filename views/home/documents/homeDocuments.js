@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./documents.module.css";
+import CardComponent from "../../../components/cardComponent";
 
 export default function HomeDocuments() {
   return (

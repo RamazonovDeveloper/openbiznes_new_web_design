@@ -1,3 +1,7 @@
+.home_navbar {
+  margin-bottom: 40px;
+}
+
 .home_navbar_wrapper {
   border-bottom: 1px solid #d2d0d0;
   padding-bottom: 18px;
@@ -5,7 +9,7 @@
   justify-content: flex-end;
 }
 
-.home_navbar_wrapper_single{
+.home_navbar_wrapper_single {
   justify-content: space-between;
 }
 
@@ -30,7 +34,7 @@
 /* .home_navbar_wrapper_left  */
 
 .home_navbar_profile,
-.home_navbar_ring { 
+.home_navbar_ring {
   font-family: Manrope;
   font-size: 20px;
   font-weight: 600;
@@ -78,6 +82,8 @@
 
 .home_navbar_toggle_image_active {
   display: flex;
+  position: absolute;
+  z-index: 15;
 }
 
 .home_navbar_toggle_active {
@@ -196,4 +202,36 @@
 
 .mainBtn:hover {
   background-color: #602796;
+}
+
+@media screen and (max-width: 1600px) {
+  .home_navbar {
+    margin-bottom: 20px;
+  }
+
+  .home_navbar_wrapper {
+    padding-bottom: 10px;
+  }
+
+  .home_navbar_balance_in_usd_wrapper > h4,
+  .home_navbar_balance_in_uzs_wrapper > h4 {
+    font-size: 13px;
+  }
+
+  .home_navbar_balance_in_usd_wrapper > p,
+  .home_navbar_balance_in_uzs_wrapper > p {
+    font-size: 11px;
+  }
+
+  .home_navbar_profile,
+  .home_navbar_ring {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .home_navbar_balance_in_usd,
+  .home_navbar_balance_in_uzs {
+    padding: 6px 10px 5px;
+  }
 }

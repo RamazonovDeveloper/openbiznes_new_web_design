@@ -64,11 +64,11 @@ export default function ButtonComponent({
     case "adaptive_gray":
       return (
         <button
-          className={`${styles.my_btn} ${styles.my_gray}`}
+          className={`${styles.my_btn} ${styles.my_adptive_gray} `}
           style={{
             paddingLeft: padding,
             paddingRight: padding,
-            fontSize: `${fontSize || "15px"}`,
+            fontSize: fontSize,
             height: height,
             alignItems: "center",
           }}

@@ -275,3 +275,14 @@
   color: #1ab759;
   font-weight: 500 !important;
 }
+
+@media screen and (max-width:1500px) {
+  .home_main_transactions{
+    height: fit-content;
+  }
+  
+  .home_main_transactions_table{
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+}

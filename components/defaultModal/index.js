@@ -21,9 +21,9 @@ export default function DefaultModalComponent({ success, closeModalFunction }) {
                 <path
                   d="M30.8945 39.9999L37.3986 46.504L50.4067 33.4958"
                   stroke="#4E0F8A"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <p>Платеж успешно создан</p>
@@ -50,16 +50,16 @@ export default function DefaultModalComponent({ success, closeModalFunction }) {
                 <path
                   d="M51.0348 28.9658L28.9658 51.0348"
                   stroke="#D23232"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M28.9658 28.9658L51.0348 51.0348"
                   stroke="#D23232"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <p>Текст описания ошибки, что пошло не так, подсказка для решения</p>

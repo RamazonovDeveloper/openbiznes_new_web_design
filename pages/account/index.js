@@ -4,6 +4,7 @@ import ButtonComponent from "../../components/buttonComponent";
 import styles from "./account.module.css";
 import DefaultModalComponent from "../../components/defaultModal";
 import MainModalComponent from "../../components/mainModal";
+import SaveToggleButton from "../../components/saveToggleBtnComponent";
 
 export default function index() {
   const [dateFilter, setDateFilter] = useState(false);
@@ -66,23 +67,7 @@ export default function index() {
 
         <div className={styles.rekvizit_actions}>
           <div className={styles.rekvizit_actions_btns}>
-            <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
-              <div className={styles.rekvizit_actions_btns_content}>
-                Сохранить
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.54004 4.91992L7.00004 10.6399L12.46 4.91992H1.54004Z"
-                    fill="#777373"
-                  />
-                </svg>
-              </div>
-            </ButtonComponent>
+            <SaveToggleButton />
             <ButtonComponent type={"adaptive_gray"} padding={"16px"}>
               <div className={styles.rekvizit_actions_btns_content}>Отправить на почту</div>
             </ButtonComponent>
@@ -96,7 +81,7 @@ export default function index() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_1505_3611)">
+                  <g clipPath="url(#clip0_1505_3611)">
                     <path
                       d="M7.34 0V2.16L8.06 2.88V0.72H13.46V5.04H17.78V14.4H12.38V15.12H18.5V4.53375L13.9663 0H7.34ZM14.18 1.22625L17.2738 4.32H14.18V1.22625ZM0.5 2.88V18H11.66V7.41375L11.5588 7.30125L7.23875 2.98125L7.12625 2.88H0.5ZM1.22 3.6H6.62V7.92H10.94V17.28H1.22V3.6ZM7.34 4.1175L10.4225 7.2H7.34V4.1175Z"
                       fill="#342C2C"

@@ -1,5 +1,5 @@
 .payment_tem {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .payment_tem_filters_search {
@@ -94,11 +94,14 @@
 .payment_tem_table_item_accor {
   padding: 16px 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 .payment_tem_table_item_accor_btns {
   position: relative;
 }
+
+
 
 .payment_tem_table_item_accor_btns_wrapper {
   width: 850px;
@@ -147,4 +150,15 @@
 
 .payment_tem_table_item_accor_data_item_text:last-child {
   border: none;
+}
+
+@media screen and (max-width:1900px) {
+  .payment_tem_table_item_accor_btns_wrapper{
+    width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .payment_tem_table_item_accor_data{
+    width: 60%;
+  }
 }
