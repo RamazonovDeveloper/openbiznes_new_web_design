@@ -50,7 +50,7 @@ export default function TransactionsPage() {
                   />
                 </svg>
               </div>
-              {dateFilter && (
+              {false && (
                 <div
                   className={
                     styles.home_main_transactions_filterBtn_icon_date_modal

@@ -233,6 +233,7 @@
   padding: 8px 4px;
   top: 50px;
   right: 0;
+  z-index: 100;
 }
 
 .home_main_transactions_filterBtn_icon_date_modal_btn {
