@@ -78,12 +78,40 @@
   top: 65px;
   display: none;
   transition: 0.5s ease;
+  background: url("../../../public/profile.jpg");
+  width: 300px;
+  height: 170px;
+  border-radius: 8.91px;
+  padding: 20px;
+
+}
+
+.home_navbar_toggle_image_texts {
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.40799999237060547px;
+  text-align: left;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+
+  border-bottom: 1px solid #FFFFFF33;
+}
+
+.home_navbar_toggle_image_texts:last-child{
+  border: none;
 }
 
 .home_navbar_toggle_image_active {
   display: flex;
   position: absolute;
   z-index: 15;
+  flex-direction: column;
 }
 
 .home_navbar_toggle_active {
