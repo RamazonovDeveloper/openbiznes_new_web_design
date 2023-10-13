@@ -1,0 +1,626 @@
+
+/* @tailwind components;
+@tailwind utilities; */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* body {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f5;
+} */
+
+.container {
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+._container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.my_card {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.my_card > p:nth-child(1) {
+  font-family: "Inter", sans-serif;
+}
+
+.scan_btn {
+  background: rgba(244, 244, 245, 0.3);
+  border: 1px solid rgba(240, 235, 241, 0.3);
+  /* backdrop-filter: blur(2px); */
+  text-transform: uppercase;
+}
+/* 
+.my_footer{
+  background-image: url("/images/footBack.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+} */
+
+.my_card_back_styles {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.my_card3_back_styles {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 0px;
+}
+
+.my_card4_back_styles {
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -100px -50px;
+}
+
+.my_card5_back_styles {
+  background-color: #EB98C4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 0px;
+}
+
+@media screen and (min-width: 414px) {
+  .my_card3_back_styles {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: left top;
+  }
+
+  .my_card4_back_styles {
+    background-size: 130%;
+    background-position: left 0px;
+  }
+
+  .my_card5_back_styles {
+    background-size: cover;
+    background-position: right bottom;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .my_card_back_styles {
+    background-position: center -50px;
+  }
+
+  .my_card3_back_styles {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center bottom;
+  }
+
+  .my_card4_back_styles {
+    background-size: cover;
+    background-position: left -80px;
+  }
+
+  .my_card5_back_styles {
+    background-image:url("/images/card5BackFigma.png")!important;
+    background-size: 90%;
+    background-position: right bottom;
+  }
+}
+
+
+@media screen and (min-width: 640px) {
+  .my_card4_back_styles {
+    background-size: cover;
+    background-position: left -150px;
+  }
+  
+  /* .my_card5_back_styles {
+    background-size: cover;
+    background-position: right -20px;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .my_card_back_styles {
+    background-position: center 0px;
+  }
+
+  .my_card3_back_styles {
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  .my_card4_back_styles {
+    background-size: cover;
+    background-position: left bottom;
+  }
+
+  .my_card5_back_styles {
+    background-size: contain;
+    background-position: right bottom;
+  }
+
+  ._container {
+    max-width: 1085px;
+    padding: 0 1.25rem;
+  }
+}
+
+
+/* @media screen and (min-width: 640px) {
+  
+} */
+
+/* @media screen and (min-width: 880px) {
+  .my_card3_back_styles {
+    background-size: 150%;
+    background-position: -30px -10px;
+  }
+} */
+
+@media screen and (min-width: 1024px) {
+  ._container {
+    padding: 0 1.875rem;
+  }
+
+  .my_card_back_styles {
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: left top;
+  }
+
+  .my_card5_back_styles {
+    background-size: 90%;
+    background-position: right bottom;
+  }
+}
+
+/* @media screen and (min-width:768px) {
+  .my_footer{
+    background-image: url("/images/footGirl.png");
+
+    background-position: left top;
+  }
+} */
+
+
+.my_link{
+  border-bottom: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my_navbar{
+    background-color: #F7F7F7;
+    /* background-color: #F4F5F7; */
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100vw!important;
+}
+
+.my_navbar_links{
+    height: calc(100vh);
+    z-index: 30;
+    position: fixed;
+    left: 0;
+    top: 69px;
+    width: 80vw;
+    font-weight: 500;
+    background-color: #F7F7F7;
+    transform: translateX(-100%);
+    transition: .5s ease;
+    padding: 20px;
+}
+
+.my_navbar_links-active{
+    transform: translateX(0);
+}
+
+.my_navbar_links ul{ 
+    flex-direction: column;
+    height: calc(100%-90px);
+}
+
+.section_1{
+    /* margin-top: 100px; */
+    max-width: 1043px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-width:414px) {
+    .section_1{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .images::before {
+        width: 80%;
+        right: unset;
+    }
+
+    .form_section{
+        background-size: 200%;
+    }
+}
+
+@media screen and (min-width:576px) {
+        .header_girl_new{
+        display: none;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .hero::after {
+        /* left: 10%; */
+    }
+
+    .hero__block{
+        padding-left: 42px;
+    }
+    
+    .form_section{
+        background-size: 150%;
+    }
+}
+
+@media screen and (min-width:630px) {
+    .hero__block{
+        padding-left: 57px;
+    }
+
+}
+
+
+@media screen and (min-width:660px) {
+    .hero__block{
+        padding-left: 72px;
+    }
+    
+    .hero::after {
+        /* right: 0; */
+        left: -20%;
+    }
+}
+
+@media screen and (min-width:690px) {
+    .hero__block{
+        padding-left: 87px;
+    }
+
+    .hero::after {
+        /* right: 0; */
+        left: -10%;
+    }
+}
+
+
+@media screen and (min-width:720px) {
+    .hero__block{
+        padding-left: 102px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .section_1{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .images__right_img2{
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        width: 620px;
+    }  
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .section_1{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+
+
+@media screen and (min-width:1440px) {
+    .hero__block{
+        padding-left: 70px;
+    }
+
+    .form_section{
+        background-position: top center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .info::before {
+        width: 68%;
+    }
+
+    .info::after {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .hero::after {
+        left: 35%;
+    }
+
+    .my_section_name::before {
+        width: 30px;
+        /* display: flex; */
+    }
+
+    .my_section_name>p {
+        margin-left: 70px;
+    }
+
+    .info::before {
+        width: 63%;
+    }
+
+    .info::after {
+        left: 70%;
+        right: unset;
+    }
+
+    .images::before {
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (min-width:2000px) {
+    .hero::after {
+        left: 40%;
+    }
+
+    .my_section_name::before {
+        width: 30px;
+    }
+
+    .my_section_name>p {
+        margin-left: 70px;
+    }
+
+    .info::before {
+        width: 63%;
+    }
+
+    .info::after {
+        left: unset;
+        right: 15%;
+    }
+
+    .images::before {
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (min-width:2700px) {
+
+    .hero::after {
+        left: 43%;
+    }
+    
+    .info::after {
+        left: unset;
+        right: 25%;
+    }
+}
+
+@media screen and (min-width:4000px) {
+    
+    .info::after {
+        left: unset;
+        right: 30%;
+    }
+
+    .hero::after {
+        left: unset;
+        right: 35%;
+    }
+}
+
+@media screen and (min-width:5000px) {
+    
+    .info::after {
+        left: unset;
+        right: 35%;
+    }
+}
+
+
+@media screen and (min-width:920px) {
+    .bank_card_7{
+        margin-bottom: 100px;
+    }
+
+    .bank_card_7_items{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .bank_card_7{
+        margin-bottom: 120px;
+    }
+    
+    .bank_card_7_items{
+        margin-top: 240px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .bank_card_7{
+        margin-bottom: 300px;
+    }
+
+    .bank_card_7_items{
+        margin-top: 100px;
+    }
+
+    .images__right_img1{
+        z-index: 2;
+        top: 80px;
+        left: -30px;
+        width: 644px;
+    }
+
+    .images__right_img2{
+        z-index: 1;
+        top: 0;
+        left: -170px;
+        width: 620px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .bank_card_7{
+        margin-bottom: 350px;
+    }
+
+    .bank_card_7_items{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .bank_card_7{
+        margin-bottom: 480px;
+    }
+
+    .bank_card_7_items{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .images__right_img1{
+        z-index: 2;
+        top: 80px;
+        left: -80px;
+        width: 644px;
+    }
+
+    .images__right_img2{
+        z-index: 1;
+        top: 0;
+        left: -200px;
+        width: 620px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .bank_card_7{
+        margin-bottom: 350px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .bank_card_7{
+        margin-bottom: 400px;
+    }
+}
+
+@media screen and (min-width:1650px) {
+    .bank_card_7{
+        margin-bottom: 500px;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .map_image{
+        width: 980px!important;
+    }
+}
+
+
+
+ @media screen and (min-width:2000px) {
+    .map_image{
+        top: -140px;
+        left: -150px!important;
+    }
+}
+
+
+@media screen and (min-width:500px) {
+    .my_header_card{
+        left: 10%;
+    }
+}
+
+@media screen and (min-width:570px) {
+    .my_header_card{
+        left: 17%;
+    }
+}
+
+
+@media screen and (min-width:760px) {
+    .my_header_card{
+        left: unset;
+    }
+}
+
+
+
+/*
+@media screen and (min-width:3000px) {
+    .map_image{
+        left: 30%;
+    }
+} */

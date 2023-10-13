@@ -20,6 +20,7 @@
 .home_main_account_items{
   height: 90%;
   overflow-y: auto;
+  padding-right: 10px;
 }
 
 .home_main_account_items_item {

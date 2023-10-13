@@ -24,6 +24,7 @@
 .home_main_account_items{
   overflow-y: scroll;
   max-height: 420px;
+  padding-right: 10px;
 }
 
 .home_main_account_items_item {
