@@ -8,7 +8,7 @@ import styles from "./login.module.css";
 export default function LoginPage() {
   const auth = useAuth();
 
-  const [comp, setComp] = useState("access");
+  const [comp, setComp] = useState("tel");
 
   return (
     <div className={styles.login}>
@@ -232,7 +232,7 @@ export default function LoginPage() {
             </h1>
 
             <div>
-              <InputDivComponent error={true}>
+              <InputDivComponent error={false}>
                 <div className={styles.login_right_middle_input}>
                   <svg
                     width="24"
@@ -250,7 +250,7 @@ export default function LoginPage() {
                   <input type="text" defaultValue={"+998"} />
                 </div>
               </InputDivComponent>
-              {true && (
+              {false && (
                 <p className={styles.login_right_middle_input_error}>
                   * Этот номер уже используется
                 </p>
@@ -260,7 +260,7 @@ export default function LoginPage() {
             <div className={styles.login_right_middle_main}>
               <button
                 className={`${styles.login_right_middle_btn} ${
-                  true && styles.login_right_middle_btn_unactive
+                  false && styles.login_right_middle_btn_unactive
                 }`}
               >
                 Продолжить
