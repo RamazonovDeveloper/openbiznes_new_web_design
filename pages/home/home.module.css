@@ -30,7 +30,7 @@
   padding: 10px;
   margin-top: 55px;
   margin-bottom: 38px;
-  border: 1px solid #FFFFFF40;
+  border: 1px solid #ffffff40;
   background-color: rgba(255, 255, 255, 0.078);
 }
 
@@ -62,22 +62,21 @@
   text-align: left;
 }
 
-.company_name_list{
+.company_name_list {
   display: none;
   transition: 0.5s ease;
-  border-top: 1px solid #FFFFFF33;
+  border-top: 1px solid #ffffff33;
   margin-top: 8px;
 }
 
-.company_name_list > div{
+.company_name_list > div {
   padding-top: 16px;
   padding-left: 16px;
 }
 
-.company_name_list_active{
+.company_name_list_active {
   display: flex;
   flex-direction: column;
-
 }
 
 .sidebar_menu_wrapper {
@@ -125,17 +124,12 @@
   margin: 0;
 }
 
-
-
-
-
 /* HOME PART STYLES */
 /* .home {
   flex-grow: 1;
   background-color: #eeeeee;
   height: 100vh;
 } */
-
 
 .home_container {
   margin-left: 30px;
@@ -184,7 +178,7 @@
   margin-right: 16px;
 }
 
-.home_navbar_toggle_wrapper{
+.home_navbar_toggle_wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -196,10 +190,9 @@
   align-items: center;
   cursor: pointer;
   transition: 0.5s ease;
-  
 }
 
-.home_navbar_toggle_image{
+.home_navbar_toggle_image {
   position: absolute;
   left: -275px;
   top: 65px;
@@ -207,11 +200,11 @@
   transition: 0.5s ease;
 }
 
-.home_navbar_toggle_image_active{
+.home_navbar_toggle_image_active {
   display: flex;
 }
 
-.home_navbar_toggle_active{
+.home_navbar_toggle_active {
   transform: rotate(180deg);
 }
 
@@ -274,7 +267,7 @@
 
 /* MAIN SECTION HEADER PART */
 
-.home_main{
+.home_main {
   height: 70vh;
   /* padding-bottom: 40px; */
 }
@@ -326,13 +319,12 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border: none;
 }
 
-.mainBtn:hover{
+.mainBtn:hover {
   background-color: #602796;
-
 }
 
 /* HOME MAIN PART */
@@ -355,7 +347,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 64.4% 31.7%;
+  grid-template-rows: 57.4% 31.7%;
   gap: 30px;
 }
 
@@ -377,12 +369,12 @@
   box-shadow: 0px 10px 20px 0px #0000001a;
 }
 
-.home_main_transactions_filters{
+.home_main_transactions_filters {
   display: flex;
   justify-content: space-between;
 }
 
-.home_main_transactions_filters_btns{
+.home_main_transactions_filters_btns {
   display: flex;
   padding-bottom: 20px;
 }
@@ -396,7 +388,7 @@
   margin: 0;
   margin-bottom: 20px;
 }
-.home_main_transactions_filterBtn{
+.home_main_transactions_filterBtn {
   display: flex;
 
   justify-content: space-between;
@@ -407,50 +399,50 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   padding: 10px;
-  border: 1px solid #D2D0D0;
+  border: 1px solid #d2d0d0;
   border-radius: 5px;
   position: relative;
 }
 
-.home_main_transactions_filterBtn:last-child{
+.home_main_transactions_filterBtn:last-child {
   margin-left: 20px;
 }
 
-.home_main_transactions_filterBtn > p{
+.home_main_transactions_filterBtn > p {
   margin-left: 10px;
   margin-right: 16px;
 }
 
-.home_main_transactions_filterBtn > span{
+.home_main_transactions_filterBtn > span {
   margin-right: 118px;
 }
 
-.home_main_transactions_filterBtn_icon{
-  transition: .5s ease;
+.home_main_transactions_filterBtn_icon {
+  transition: 0.5s ease;
   display: flex;
   align-items: center;
   transform: rotate(180deg);
   position: relative;
 }
 
-.home_main_transactions_filterBtn_icon_active{
+.home_main_transactions_filterBtn_icon_active {
   transform: rotate(360deg);
 }
 
-.home_main_transactions_filterBtn_icon_date_modal{
+.home_main_transactions_filterBtn_icon_date_modal {
   /* width: 200px;
   height: 150px; */
   background-color: white;
   position: absolute;
   z-index: 10;
   border-radius: 8.91px;
-  box-shadow: 0px 10px 60px 0px #0000001A;
+  box-shadow: 0px 10px 60px 0px #0000001a;
   padding: 8px 4px;
   top: 50px;
   right: 0;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn{
+.home_main_transactions_filterBtn_icon_date_modal_btn {
   display: flex;
   justify-content: space-between;
   border: none;
@@ -466,25 +458,25 @@
   margin-bottom: 2px;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn_active{
-  background-color: #EDE7F3;
+.home_main_transactions_filterBtn_icon_date_modal_btn_active {
+  background-color: #ede7f3;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn_icon{
+.home_main_transactions_filterBtn_icon_date_modal_btn_icon {
   display: none;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active{
+.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active {
   display: flex;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_line{
+.home_main_transactions_filterBtn_icon_date_modal_line {
   width: 100%;
   height: 1px;
-  border-bottom: 1px dashed #EEEEEE;
+  border-bottom: 1px dashed #eeeeee;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_date{
+.home_main_transactions_filterBtn_icon_date_modal_date {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -501,7 +493,7 @@
   margin-bottom: 8px;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btns{
+.home_main_transactions_filterBtn_icon_date_modal_btns {
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -518,7 +510,7 @@
   margin-top: 8px;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btns > button{
+.home_main_transactions_filterBtn_icon_date_modal_btns > button {
   font-family: Manrope;
   font-size: 12px;
   font-weight: 600;
@@ -530,8 +522,8 @@
   border: none;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btns > button:first-child{
-  color: #956FB9;
+.home_main_transactions_filterBtn_icon_date_modal_btns > button:first-child {
+  color: #956fb9;
   background-color: transparent;
 }
 /* .home_main_account_items{
@@ -639,7 +631,7 @@
   padding: 12px 30px;
   display: flex;
   gap: 15px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .home_main_transactions_table_item_left {
@@ -723,25 +715,24 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   color: #777373;
-
 }
 
-.home_main_transactions_table_item_right_amount{
+.home_main_transactions_table_item_right_amount {
   color: #1ab759;
-  font-weight: 500!important;
+  font-weight: 500 !important;
 }
 
-@media screen and (max-width:1500px) {
-  .home_main{
+@media screen and (max-width: 1500px) {
+  .home_main {
     gap: 15px;
     /* height: 50vh; */
   }
 
-  .home_main_left{
+  .home_main_left {
     gap: 15px;
+    grid-template-rows: 62.4% 31.7%;
   }
 }
-
 
 /* @media screen and (max-width:1500px) {
   .home_main{

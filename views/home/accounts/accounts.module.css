@@ -1,6 +1,6 @@
-/* .home_account{
+.home_account{
   height: fit-content;
-} */
+}
 
 .home_main_account,
 .home_main_documents {
@@ -116,4 +116,8 @@
   .home_main_account_items_item h4{
     font-size: 11px;
   } 
+
+  .home_account{
+    height: 100%;
+  }
 }
