@@ -93,10 +93,10 @@ export default function DefaultPage() {
               <div className="lg:flex hidden items-center">
                 <ul className="flex uppercase items-center justify-between text-[14px] leading-[17px] font-bold opacity-80">
                   <li className="ml-[25px]">
-                    <Link href="/">{langData.nav_link_1}</Link>
+                    <Link href="/#">{langData.nav_link_1}</Link>
                   </li>
                   <li className="ml-[25px]">
-                    <Link href="http://91.213.99.139:3006/">
+                    <Link href="/">
                       {langData.nav_link_2}
                     </Link>
                   </li>
@@ -189,6 +189,11 @@ export default function DefaultPage() {
       <section className="pt-[100px] pb-[60px]">
         <div className={styles.section_1}>
           <img src="./images/section1.png" alt="" />
+          <div className="flex justify-center items-center h-10 mt-6 mb-6">
+                <Link className="text-xl bg-[#4E0F8A] px-16 py-5 text-white rounded-lg" href="/">
+                    Kirish
+                </Link>
+          </div>
           <h2 className="mt-4 font-bold opacity-80 text-[21px] leading-[26px] sm:text-[24px] sm:leading-[30px] lg:text-[26px] lg:leading-[33px] xl:text-[30px] xl:leading-[37px]">
             {langData.header_title1}
           </h2>
