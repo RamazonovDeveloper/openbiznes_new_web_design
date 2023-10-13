@@ -3,7 +3,7 @@
   border-radius: 8.91px;
   background-color: white;
   padding: 20px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   box-shadow: 0px 10px 20px 0px #0000001a;
 }
 
@@ -15,6 +15,11 @@
   letter-spacing: -0.40799999237060547px;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.home_main_account_items{
+  height: 90%;
+  overflow-y: auto;
 }
 
 .home_main_account_items_item {

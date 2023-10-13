@@ -27,6 +27,16 @@ export default function HomeDocuments() {
             Ожидает подписания
           </h4>
         </div>
+        <div className={styles.home_main_account_items_item}>
+          <div>
+            <h3>Договор страхования </h3>
+            <p>АКБ “Агробанк”</p>
+            <p>Договор №1 от 15.09.2023 </p>
+          </div>
+          <h4 className={styles.home_main_account_items_item_documents_status}>
+            Ожидает подписания
+          </h4>
+        </div>
       </div>
     </div>
   );

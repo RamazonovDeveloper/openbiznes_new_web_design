@@ -277,12 +277,20 @@
 }
 
 @media screen and (max-width:1500px) {
-  .home_main_transactions{
-    height: fit-content;
+  .home_main_transactions_table_item{
+    padding: 6px 15px;
+  }
+
+  .home_main_transactions_table_item p{
+    font-size: 11px;
+  }
+
+  .home_main_transactions_table_item h4{
+    font-size: 11px;
   }
   
-  .home_main_transactions_table{
+  /* .home_main_transactions_table{
     overflow-y: scroll;
     max-height: 300px;
-  }
+  } */
 }

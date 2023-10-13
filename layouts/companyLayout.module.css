@@ -1,9 +1,7 @@
 .section {
   color: black;
-  /* display: flex; */
   display: grid;
   grid-template-columns: 18.12% 81.88%;
-  /* position: relative; */
 }
 
 .section_side_bar{

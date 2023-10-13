@@ -91,15 +91,13 @@ export default function SideBar() {
             </div>
             <p>ООО “FUTURE OPEN TECHNOLOGY GROUP”</p>
             {companyNameActive && (
-              <>
-                <div
-                  className={`${styles.company_name_list} ${styles.company_name_list_active}`}
-                >
-                  <div>ООО “Ромашка 1”</div>
-                  <div>ООО “Ромашка 1”</div>
-                  <div>ООО “Ромашка 1”</div>
-                </div>
-              </>
+              <div
+              className={`${styles.company_name_list} ${styles.company_name_list_active}`}
+            >
+              <div>ООО “Ромашка 1”</div>
+              <div>ООО “Ромашка 1”</div>
+              <div>ООО “Ромашка 1”</div>
+            </div>
             )}
           </div>
 
