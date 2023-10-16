@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import styles from "./sideBar.module.css";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function SideBar() {
   const [companyNameActive, setCompanyNameActive] = useState(false);
+
+  const [menu, setMenu] = useState('')
+
+  const router = useRouter()
+
+  function handleLinkClick (props) {
+    setMenu(props)
+    router.push(`/${props}`)
+  }
 
   return (
     <div className={styles.sidebar}>
@@ -69,25 +80,6 @@ export default function SideBar() {
           >
             <div className={styles.company_name_actions}>
               <p>Компания</p>
-              <div
-                className={`${styles.home_navbar_toggle} ${
-                  companyNameActive && styles.home_navbar_toggle_active
-                }`}
-                // onClick={() => setCompanyNameActive(!companyNameActive)}
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20.0249 9.46499L19.3349 8.77499L11.9999 16.11L4.6649 8.77499L3.9749 9.46499L11.6549 17.145L11.9999 17.475L12.3449 17.145L20.0249 9.46499Z"
-                    fill="#F4F3F3"
-                  />
-                </svg>
-              </div>
             </div>
             <p>ООО “FUTURE OPEN TECHNOLOGY GROUP”</p>
             {companyNameActive && (
@@ -103,7 +95,7 @@ export default function SideBar() {
 
           <div className={styles.sidebar_menu}>
             <ul className={styles.sidebar_menu_wrapper}>
-              <li>
+              <li onClick={() => handleLinkClick('transactions/create')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'transactions/create' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="24"
@@ -125,7 +117,7 @@ export default function SideBar() {
                 </svg>
                 <p>Создать платеж</p>
               </li>
-              <li>
+              <li onClick={() => handleLinkClick('account')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'account' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="24"
@@ -140,7 +132,7 @@ export default function SideBar() {
                 </svg>
                 <p>Счета</p>
               </li>
-              <li>
+              <li onClick={() => handleLinkClick('transactions')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'transactions' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="24"
@@ -162,7 +154,7 @@ export default function SideBar() {
                 </svg>
                 <p>Транзакции</p>
               </li>
-              <li>
+              <li onClick={() => handleLinkClick('documents')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'documents' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="24"
@@ -177,7 +169,7 @@ export default function SideBar() {
                 </svg>
                 <p>Документы</p>
               </li>
-              <li>
+              <li onClick={() => handleLinkClick('employees')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'employees' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="21"
@@ -192,7 +184,7 @@ export default function SideBar() {
                 </svg>
                 <p>Мои сотрудники</p>
               </li>
-              <li>
+              <li onClick={() => handleLinkClick('oferta')} className={`${styles.sidebar_menu_wrapper_link} ${menu == 'oferta' && styles.sidebar_menu_wrapper_link_active}`}>
                 <svg
                   width="24"
                   height="24"
@@ -239,7 +231,7 @@ export default function SideBar() {
           </div>
           <div className={styles.sidebar_bottom_item}>
             <div>
-              <p>USD</p>
+              <p>EUR</p>
               <svg
                 width="24"
                 height="24"
@@ -264,7 +256,7 @@ export default function SideBar() {
           </div>
           <div className={styles.sidebar_bottom_item}>
             <div>
-              <p>USD</p>
+              <p>RUB</p>
               <svg
                 width="24"
                 height="24"

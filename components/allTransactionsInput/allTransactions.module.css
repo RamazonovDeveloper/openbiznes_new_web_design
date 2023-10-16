@@ -1,0 +1,155 @@
+.accounts_input{
+  min-width: 280px;
+}
+
+.accounts_input {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #342c2c;
+  border: 1px solid #d2d0d0;
+  background-color: #eeeeee99;
+  padding: 11px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.accounts_input_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accounts_input_main_texts {
+  display: flex;
+  align-items: center;
+}
+
+.accounts_input_main_texts_span {
+  width: 5px;
+  height: 5px;
+  background-color: #777373;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+
+.accounts_input_main_icon {
+  transition: 0.5s ease;
+}
+
+.accounts_input_main_icon_active {
+  transition: 0.5s ease;
+  transform: rotate(180deg);
+}
+
+.accounts_input_modal {
+  width: calc(100%);
+  padding: 8px 4px;
+  position: absolute;
+  background-color: white;
+  z-index: 30;
+  top: calc(100% + 10px);
+  left: 0;
+  border-radius: 8.91px;
+  box-shadow: 0px 10px 60px 0px #0000001a;
+}
+
+.accounts_input_modal_search {
+  display: flex;
+  padding: 10px;
+  background-color: #eeeeee99;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.accounts_input_modal_search input {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #342c2c;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.accounts_input_modal_item {
+  padding: 7px 16px;
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.accounts_input_modal_item:last-child {
+  border: none;
+}
+
+.accounts_input_modal_item_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accounts_input_modal_btns {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.accounts_input_modal_btns_btn {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #956fb9;
+  width: 100px;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+
+.accounts_input_modal_btns_btn_gray {
+  background-color: #e8e8e8;
+  color: #342c2c;
+  margin-left: 10px;
+}
+
+.accounts_input_modal_item_modal_item {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+  padding: 6px 16px;
+  border-radius: 5px;
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.accounts_input_modal_item_modal_item:hover {
+  background-color: #ede7f3;
+  border-color: #ede7f3;
+}
+
+.accounts_input_modal_item_modal_item_active {
+  background-color: #ede7f3;
+  padding: 7px 16px;
+}
+
+.accounts_input_modal_item_modal_item > p {
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  color: #777373;
+}
+
+@media screen and (max-width: 1450px) {
+  .accounts_input{
+    min-width: 200px;
+  }
+}

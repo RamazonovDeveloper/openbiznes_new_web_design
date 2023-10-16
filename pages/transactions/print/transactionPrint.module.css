@@ -1,0 +1,39 @@
+.preview{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000059;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview_actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 11px 0;
+    padding-right: 540px;
+    background-color: white;
+    align-items: center;
+}
+
+.preview_actions > div{
+    margin-left: 40px;
+}
+
+.preview_actions_gray{
+    display: flex;
+    gap: 16px;
+}
+
+.preview_main{
+    flex-grow: 1;
+}
+
+.preview_main > iframe > #toolbar{
+    display: none!important;
+}
+
+.preview_main iframe{
+    width: 100%;
+    height: 100%;
+}

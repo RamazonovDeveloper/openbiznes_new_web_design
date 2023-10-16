@@ -5,6 +5,8 @@ import SelectComponent from "../../../components/selectComponent";
 import ButtonComponent from "../../../components/buttonComponent";
 import InputComponent from "../../../components/inputComponent";
 import Link from "next/link"; 
+import TypeOperation from "../../../components/typeOperation/typeOperation";
+import AllAccountsInput from "../../../components/allAccountsInput/allAccountsInput";
 
 export default function CreateTransactionPage() {
   return (
@@ -12,9 +14,9 @@ export default function CreateTransactionPage() {
       <CardComponent>
         <div className={styles.create_header}>
           <div className={styles.create_header_input}>
-            <SelectComponent />
+            <TypeOperation />
           </div>
-          <ButtonComponent
+          {/* <ButtonComponent
             type={"adaptive_gray"}
             height={"32px"}
             padding={"16px"}
@@ -42,7 +44,7 @@ export default function CreateTransactionPage() {
                 </defs>
               </svg>
             </div>
-          </ButtonComponent>
+          </ButtonComponent> */}
         </div>
         <div className={styles.create_body}>
           <div className={styles.edit_wrapper_left_item}>
@@ -54,24 +56,7 @@ export default function CreateTransactionPage() {
                 Валюта, счет
               </div>
               <div>
-                <SelectComponent>
-                    <div
-                      className={styles.select_modal_item}
-                      // onClick={(e) => handleClick(e)}
-                    >
-                      Платеж на карту
-                    </div>
-                    <div
-                      className={styles.select_modal_item}
-                    >
-                      Платеж контрагенту
-                    </div>
-                    <div
-                      className={styles.select_modal_item}
-                    >
-                      Платеж контрагенту
-                    </div>
-                </SelectComponent>
+                <AllAccountsInput />
               </div>
             </div>
             <div className={styles.edit_wrapper_left_item_body}>
@@ -87,7 +72,7 @@ export default function CreateTransactionPage() {
                 Номер платежа
               </div>
               <div>
-                <InputComponent placeholder={"Впишите"}></InputComponent>
+                <InputComponent placeholder={"000000"}></InputComponent>
               </div>
             </div>
           </div>

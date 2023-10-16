@@ -1,0 +1,137 @@
+.home_main_transactions_filterBtn {
+
+  align-items: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  padding: 11px 10px;
+  border: 1px solid #d2d0d0;
+  border-radius: 5px;
+  position: relative;
+  background-color: #eeeeee99;
+}
+
+.home_main_transactions_filterBtn_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_main_transactions_filterBtn_main > p {
+  margin-left: 10px;
+  margin-right: 16px;
+}
+
+.home_main_transactions_filterBtn > span {
+  margin-right: 118px;
+}
+
+.home_main_transactions_filterBtn_icon {
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+  position: relative;
+}
+
+.home_main_transactions_filterBtn_icon_active {
+  transform: rotate(360deg);
+}
+
+.home_main_transactions_filterBtn_icon_date_modal {
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  border-radius: 8.91px;
+  box-shadow: 0px 10px 60px 0px #0000001a;
+  padding: 8px 4px;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btn {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  padding: 7px 16px;
+  width: 245px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btn_active {
+  background-color: #ede7f3;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btn_icon {
+  display: none;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active {
+  display: flex;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16px;
+  width: 245px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 8px;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 16px;
+
+  width: 245px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 8px;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btns > button {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.home_main_transactions_filterBtn_icon_date_modal_btns > button:first-child {
+  color: #956fb9;
+  background-color: transparent;
+}

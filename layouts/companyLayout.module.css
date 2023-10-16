@@ -20,20 +20,24 @@
   background-color: #eeeeee;
   height: 100vh;
   position: relative;
-  overflow-y: auto;
+  overflow-y: hidden;
 /* margin-left: 18.12% ; */
 }
 
 .home_container {
   margin-left: 30px;
   margin-right: 60px;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 41px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (max-width:1800px) {
+  .home{
+    overflow-y: auto;
+  }
+
   .home_container{
     margin-top: 15px;
     margin-right: 20px;

@@ -4,7 +4,7 @@
 
 .home_navbar_wrapper {
   border-bottom: 1px solid #d2d0d0;
-  padding-bottom: 18px;
+  padding-bottom: 23px;
   display: flex;
   justify-content: flex-end;
 }
@@ -43,8 +43,8 @@
   text-align: left;
 
   box-shadow: 0px 10px 20px 0px #0000001a;
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   background-color: white;
 
   display: flex;
