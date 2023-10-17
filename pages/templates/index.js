@@ -3,16 +3,29 @@ import styles from "./paymentTemplates.module.css";
 import CardComponent from "../../components/cardComponent";
 import ButtonComponent from "../../components/buttonComponent";
 import SaveToggleButton from "../../components/saveToggleBtnComponent";
+import { useRouter } from "next/router";
+import DefaultModalComponent from "../../components/defaultModal";
 
 export default function PaymentTemplates() {
   const [activeCard, setActiveCard] = useState("empty");
+
+  const [modal, setModal] = useState(false)
 
   const handleClick = (nums) => {
     setActiveCard(nums);
   };
 
+  const router = useRouter()
+
+  const handleBtnClick = () => {
+    router.push('/templates/create')
+  }
+
   return (
     <div className={styles.payment_tem}>
+      {
+        modal && <DefaultModalComponent success={true} closeModalFunction={() => setModal(false)}/>
+      }
       <CardComponent>
         <div className={styles.payment_tem_filters}>
           <div className={styles.payment_tem_filters_search}>
@@ -351,6 +364,7 @@ export default function PaymentTemplates() {
                       height={"32px"}
                       padding={"16px"}
                       fontSize={"12px"}
+                      handleClick={() => setModal(true)}
                     >
                       Создать платеж
                     </ButtonComponent>
@@ -359,6 +373,7 @@ export default function PaymentTemplates() {
                       height={"32px"}
                       padding={"16px"}
                       fontSize={"12px"}
+                      handleClick={() => handleBtnClick()}
                     >
                       <div
                         className={styles.payment_tem_table_item_accor_btns_btn}

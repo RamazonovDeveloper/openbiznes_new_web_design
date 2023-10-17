@@ -59,6 +59,10 @@
   margin-top: 10px;
 }
 
+.table_data_item:hover{
+  background-color: #eeeeee99;
+}
+
 .table_data_item_active {
   background-color: #eeeeee99;
 }

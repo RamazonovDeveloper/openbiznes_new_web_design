@@ -15,6 +15,7 @@
 .home_main_transactions_filters_btns {
   display: flex;
   padding-bottom: 20px;
+  gap: 20px;
 }
 
 .home_main_account_title {

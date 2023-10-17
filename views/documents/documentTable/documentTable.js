@@ -200,6 +200,76 @@ export default function DocumentTable() {
                     <div>0000 0000 0000 0000 0000</div>
                   </div>
                 </div>
+                <div className={styles.table_data_item_accordion_left_item}>
+                  <div
+                    className={
+                      styles.table_data_item_accordion_left_item_header
+                    }
+                  >
+                    Получатель
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>
+                      Наименование организации
+                    </div>
+                    <div>ООО “Компания”</div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>ИНН</div>
+                    <div>12345678911234567892</div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>МФО банка</div>
+                    <div>01140</div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>Банк</div>
+                    <div>АКБ “Агробанк”</div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>Расчетный счет</div>
+                    <div>0000 0000 0000 0000 0000</div>
+                  </div>
+                </div>
+                <div className={styles.table_data_item_accordion_left_item}>
+                  <div
+                    className={
+                      styles.table_data_item_accordion_left_item_header
+                    }
+                  >
+                    Детали платежа
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>
+                    Код назначения
+                    </div>
+                    <div>08102  Оплата налогов и других обязательных платежей по расчёту  </div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>Сумма</div>
+                    <div>100 000 000 000,00 UZS</div>
+                  </div>
+                  <div
+                    className={styles.table_data_item_accordion_left_item_text}
+                  >
+                    <div className={styles.gray_text}>Дата платежа</div>
+                    <div>20.09.2023</div>
+                  </div>
+                </div>
               </div>
               <div className={styles.table_data_item_accordion_right}>
                 <div className={styles.table_data_item_accordion_right_pdf}>

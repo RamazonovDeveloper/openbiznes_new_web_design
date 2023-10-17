@@ -1,0 +1,132 @@
+.create {
+  width: 75%;
+  /* margin-top: 40px; */
+}
+
+.select_modal_item {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+
+  padding: 7px 16px;
+
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.select_modal_item:last-child {
+  border-bottom: none;
+}
+
+.select_modal_item:hover {
+  background-color: #ede7f3;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.create_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create_header_input {
+  width: 280px;
+}
+
+.create_header_btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.create_body {
+  margin-top: 20px;
+  width: 60.5%;
+}
+
+.edit_wrapper_left_item_title {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+  margin-bottom: 15px;
+}
+
+.edit_wrapper_left_item_body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.edit_wrapper_left_item_body:last-child {
+  margin-bottom: 20px;
+}
+
+.edit_wrapper_left_item_body_text {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #a5a1a1;
+}
+
+.edit_wrapper_left_item_body_text_input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit_wrapper_left_item_body_text_input input {
+  background-color: transparent;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #342C2C;
+  outline: none;
+  flex-grow: 1;
+}
+
+.edit_wrapper_left_item_body_input_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.edit_wrapper_left_btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.edit_wrapper_left_item_body_textarea > textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px;
+  gap: 16px;
+  border: 1px solid #d2d0d0;
+  background: #eeeeee99;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  padding: 11px 10px;
+  resize: none;
+  outline: none;
+}

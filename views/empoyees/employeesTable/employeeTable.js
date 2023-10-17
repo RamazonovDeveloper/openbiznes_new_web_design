@@ -4,12 +4,14 @@ import ButtonComponent from "../../../components/buttonComponent";
 import MainModalComponent from "../../../components/mainModal";
 import InputComponent from "../../../components/inputComponent";
 
-export default function EmployeeTable() {
+export default function EmployeeTable({ addEmp, setAddEmp }) {
   const [activeEmp, setActiveEmp] = useState("empty");
 
   const [modal, setModal] = useState(false);
 
-  const [addEmp, setAddEmp] = useState(true);
+  const [jobModal, setJobModal] = useState(false);
+
+  // const [addEmp, setAddEmp] = useState(true);
 
   function closeModal() {
     setModal(false);
@@ -39,7 +41,7 @@ export default function EmployeeTable() {
           </div>
           <div className={styles.edit_modal_item}>
             <p className={styles.table_item_modal_left_item_gray}>Телефон</p>
-            <InputComponent placeholder={"Главный бухгалтер"} />
+            <InputComponent placeholder={"+998 00 000 00 00"}></InputComponent>
           </div>
           <div className={styles.edit_modal_item}>
             <p className={styles.table_item_modal_left_item_gray}>ПИНФЛ</p>
@@ -89,17 +91,82 @@ export default function EmployeeTable() {
     return (
       <div>
         <div className={styles.edit_modal}>
-          <div className={styles.edit_modal_item}>
+          <div
+            className={`${styles.edit_modal_item} ${styles.edit_modal_item_forAdd}`}
+          >
             <p className={styles.table_item_modal_left_item_gray}>Телефон</p>
             <InputComponent placeholder={"+998"} />
           </div>
-          <div className={styles.edit_modal_item}>
+          <div
+            className={`${styles.edit_modal_item} ${styles.edit_modal_item_forAdd}`}
+          >
             <p className={styles.table_item_modal_left_item_gray}>ПИНФЛ</p>
-            <InputComponent placeholder={"Впишите"} />
+            <InputComponent placeholder={" 0 000000 000 000 0"} />
           </div>
-          <div className={styles.edit_modal_item}>
+          <div
+            className={`${styles.edit_modal_item} ${styles.edit_modal_item_forAdd}`}
+          >
             <p className={styles.table_item_modal_left_item_gray}>Должность</p>
-            <InputComponent placeholder={"Впишите"} />
+            <div className={styles.accounts_input}>
+              <div
+                className={styles.accounts_input_main}
+                onClick={() => setJobModal(!jobModal)}
+              >
+                <div className={styles.accounts_input_main_texts}>
+                  Должность
+                </div>
+
+                <div
+                  className={`${styles.accounts_input_main_icon} ${
+                    modal && styles.accounts_input_main_icon_active
+                  }`}
+                >
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.04004 4.92004L6.50004 10.64L11.96 4.92004H1.04004Z"
+                      fill="#777373"
+                    />
+                  </svg>
+                </div>
+              </div>
+              {jobModal && (
+                <div className={styles.accounts_input_modal}>
+                  <div>
+                    <div
+                      className={styles.accounts_input_modal_item_modal_item}
+                    >
+                      <h2>Директор</h2>
+                    </div>
+                    <div
+                      className={styles.accounts_input_modal_item_modal_item}
+                    >
+                      <h2>Главный бухгалтер</h2>
+                    </div>
+                    <div
+                      className={styles.accounts_input_modal_item_modal_item}
+                    >
+                      <h2>Бухгалтер</h2>
+                    </div>
+                  </div>
+                  <div className={styles.accounts_input_modal_btns}>
+                    <button className={styles.accounts_input_modal_btns_btn}>
+                      Сбросить
+                    </button>
+                    <button
+                      className={`${styles.accounts_input_modal_btns_btn} ${styles.accounts_input_modal_btns_btn_gray}`}
+                    >
+                      Применить
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className={styles.edit_btns}>

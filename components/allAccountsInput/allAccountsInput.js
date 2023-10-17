@@ -64,7 +64,9 @@ export default function AllAccountsInput() {
                 UZS
                 <div
                   className={
-                    amount == "UZS" && styles.accounts_input_main_icon_active
+                    amount == "UZS"
+                      ? styles.accounts_input_main_icon_active
+                      : ""
                   }
                 >
                   <svg
@@ -109,7 +111,9 @@ export default function AllAccountsInput() {
                 USD
                 <div
                   className={
-                    amount == "USD" && styles.accounts_input_main_icon_active
+                    amount == "USD"
+                      ? styles.accounts_input_main_icon_active
+                      : ""
                   }
                 >
                   <svg
@@ -140,7 +144,9 @@ export default function AllAccountsInput() {
                 EUR
                 <div
                   className={
-                    amount == "EUR" && styles.accounts_input_main_icon_active
+                    amount == "EUR"
+                      ? styles.accounts_input_main_icon_active
+                      : ""
                   }
                 >
                   <svg

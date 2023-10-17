@@ -47,7 +47,7 @@
   border: 1px solid #d2d0d0;
   border-radius: 5px;
   position: relative;
-  background-color: #EEEEEE99;
+  background-color: #eeeeee99;
 }
 
 .home_main_transactions_filterBtn:last-child {
@@ -76,8 +76,6 @@
 }
 
 .home_main_transactions_filterBtn_icon_date_modal {
-  /* width: 200px;
-    height: 150px; */
   background-color: white;
   position: absolute;
   z-index: 10;
@@ -85,7 +83,7 @@
   box-shadow: 0px 10px 60px 0px #0000001a;
   padding: 8px 4px;
   top: 50px;
-  right: 0;
+  left: 0;
 }
 
 .home_main_transactions_filterBtn_icon_date_modal_btn {
@@ -303,15 +301,14 @@
   gap: 20px;
 }
 
-.rekvizit_actions_btns_content{
+.rekvizit_actions_btns_content {
   display: flex;
   align-items: center;
   gap: 16px;
-font-family: Manrope;
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-letter-spacing: 0px;
-text-align: center;
-
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
 }

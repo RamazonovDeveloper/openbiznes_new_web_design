@@ -2,7 +2,12 @@ import React from "react";
 import styles from "./employeesHeader.module.css";
 import ButtonComponent from "../../../components/buttonComponent";
 
-export default function EmployeesHeader() {
+export default function EmployeesHeader({setAddEmp}) {
+
+  const handleClick = () => {
+    setAddEmp(true)
+  }
+
   return (
     <div className={styles.header}>
       <div className={styles.header_input}>
@@ -20,7 +25,7 @@ export default function EmployeesHeader() {
           />
         </svg>
       </div>
-      <ButtonComponent type={'adaptive'} padding={'27px'}>
+      <ButtonComponent type={'adaptive'} padding={'27px'} handleClick={handleClick}>
         <div className={styles.header_btn}>
           Добавить сотрудника
           <svg

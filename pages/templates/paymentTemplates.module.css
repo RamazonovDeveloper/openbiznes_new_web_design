@@ -24,6 +24,8 @@
   letter-spacing: -0.07800000160932541px;
   text-align: left;
   color: #342c2c;
+  flex-grow: 1;
+  outline: none;
 }
 
 .payment_tem_table {
@@ -37,6 +39,10 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   color: #342c2c;
+}
+
+.payment_tem_table_item:hover{
+  background-color: #eeeeee99;
 }
 
 .payment_tem_table_item_active {
@@ -101,8 +107,6 @@
   position: relative;
 }
 
-
-
 .payment_tem_table_item_accor_btns_wrapper {
   width: 850px;
   position: absolute;
@@ -111,7 +115,6 @@
   display: flex;
   gap: 20px;
   justify-content: flex-end;
-  
 }
 
 .payment_tem_table_item_accor_btns_btn {
@@ -120,8 +123,9 @@
   gap: 16px;
 }
 
-.payment_tem_table_item_accor_data{
-    width: 100%;
+.payment_tem_table_item_accor_data {
+  width: 606px;
+  padding-left: 60px;
 }
 
 .payment_tem_table_item_accor_data_item {
@@ -138,7 +142,7 @@
 
 .payment_tem_table_item_accor_data_item_text {
   display: grid;
-  grid-template-columns: 34% 64%;
+  grid-template-columns: 38% 60%;
   border-bottom: 1px dashed #eeeeee;
   padding: 7px 0;
   /* 
@@ -152,13 +156,13 @@
   border: none;
 }
 
-@media screen and (max-width:1900px) {
-  .payment_tem_table_item_accor_btns_wrapper{
+@media screen and (max-width: 1900px) {
+  .payment_tem_table_item_accor_btns_wrapper {
     width: 400px;
     flex-wrap: wrap;
   }
 
-  .payment_tem_table_item_accor_data{
+  .payment_tem_table_item_accor_data {
     width: 60%;
   }
 }

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styles from "./typeOperation.module.css";
 
-export default function TypeOperation() {
+export default function TypeOperation({handleClick, defaultPath}) {
   const [modal, setModal] = useState(false);
+
+  const [payType, setPayType] = useState("Платеж контрагенту");
 
   return (
     <div className={styles.accounts_input}>
@@ -10,7 +12,7 @@ export default function TypeOperation() {
         className={styles.accounts_input_main}
         onClick={() => setModal(!modal)}
       >
-        <div className={styles.accounts_input_main_texts}>Тип операции</div>
+        <div className={styles.accounts_input_main_texts}>{payType}</div>
 
         <div
           className={`${styles.accounts_input_main_icon} ${
@@ -34,19 +36,54 @@ export default function TypeOperation() {
       {modal && (
         <div className={styles.accounts_input_modal}>
           <div>
-            <div className={styles.accounts_input_modal_item_modal_item}>
+            <div
+              className={styles.accounts_input_modal_item_modal_item}
+              onClick={() => {
+                setPayType("Платеж контрагенту");
+                setModal(false);
+                handleClick('by_counterparty')
+              }}
+            >
               <h2>Платеж контрагенту</h2>
             </div>
-            <div className={styles.accounts_input_modal_item_modal_item}>
+            <div
+              className={styles.accounts_input_modal_item_modal_item}
+              onClick={() => {
+                setPayType("Платеж на карту");
+                setModal(false);
+                handleClick('')
+              }}
+            >
               <h2>Платеж на карту</h2>
             </div>
-            <div className={styles.accounts_input_modal_item_modal_item}>
+            <div
+              className={styles.accounts_input_modal_item_modal_item}
+              onClick={() => {
+                setPayType("Платеж в бюджет");
+                setModal(false);
+                handleClick('by_budget')
+              }}
+            >
               <h2>Платеж в бюджет</h2>
             </div>
-            <div className={styles.accounts_input_modal_item_modal_item}>
+            <div
+              className={styles.accounts_input_modal_item_modal_item}
+              onClick={() => {
+                setPayType("Платеж в казначейство");
+                setModal(false);
+                handleClick('by_treasury')
+              }}
+            >
               <h2>Платеж в казначейство</h2>
             </div>
-            <div className={styles.accounts_input_modal_item_modal_item}>
+            <div
+              className={styles.accounts_input_modal_item_modal_item}
+              onClick={() => {
+                setPayType("Шаблоны");
+                setModal(false);
+                handleClick('templates')
+              }}
+            >
               <h2>Шаблоны</h2>
             </div>
           </div>

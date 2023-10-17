@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-
+  outline: none;
 
   font-family: Manrope;
   font-size: 13px;
@@ -18,10 +18,24 @@
   text-align: left;
 }
 
-.myInput > input{
-    
-}
-
 .myInput_invalid {
   border-color: #ff8888;
+}
+
+
+.error {
+  margin-top: 8px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  color: #d23232;
+}
+
+@media screen and (max-width: 1500px) {
+  .error {
+    font-size: 12px;
+  }
 }
