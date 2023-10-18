@@ -221,7 +221,7 @@ export default function LoginPage() {
                 </clipPath>
               </defs>
             </svg>
-            <p>O'zbek</p>
+            <p>O&apos;zbek</p>
           </div>
         </div>
 

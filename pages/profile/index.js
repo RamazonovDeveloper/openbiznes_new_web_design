@@ -81,9 +81,10 @@ export default function Profile() {
       {edit && (
         <MainModalComponent
           title={"Редактировать персональные данные"}
-          children={modalProps()}
           closeModalFunction={closeModal}
-        />
+        >
+          {modalProps()}
+        </MainModalComponent>
       )}
 
       <div className={styles.profile_cards}>
@@ -171,7 +172,7 @@ export default function Profile() {
                   </label>
                   <label className={styles.profile_cards_right_label}>
                     <input name="language" type="radio" />
-                    O'zbek
+                    O&apos;zbek
                   </label>
                 </div>
               </div>

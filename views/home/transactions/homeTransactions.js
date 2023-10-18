@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./transactions.module.css";
 import AllTransactionsInput from "../../../components/allTransactionsInput/allTransactions";
+import AllTimeInput from "../../../components/allTimeInput/allTime";
 
 export default function HomeTransactions() {
   const [dateFilter, setDateFilter] = useState(false);
@@ -11,7 +12,7 @@ export default function HomeTransactions() {
       <div className={styles.home_main_transactions_filters}>
         <h2 className={styles.home_main_account_title}>Транзакции</h2>
         <div className={styles.home_main_transactions_filters_btns}>
-          <button
+          {/* <button
             className={styles.home_main_transactions_filterBtn}
             onClick={() => setDateFilter(!dateFilter)}
           >
@@ -143,7 +144,8 @@ export default function HomeTransactions() {
                 </div>
               </div>
             )}
-          </button>
+          </button> */}
+          <AllTimeInput />
           <AllTransactionsInput />
         </div>
       </div>

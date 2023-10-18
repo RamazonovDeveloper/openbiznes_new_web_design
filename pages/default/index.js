@@ -163,7 +163,7 @@ export default function DefaultPage() {
                 onClick={() => handleLangClick("uz")}
               >
                 <img className="w-7 me-2" src={"/assets/bayroq.png"} alt="" />
-                <p className="text-base">O'zbek</p>
+                <p className="text-base">O&apos;zbek</p>
               </div>
             </div>
 

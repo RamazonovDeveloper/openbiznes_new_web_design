@@ -214,7 +214,7 @@ export default function AuthPage() {
                 </clipPath>
               </defs>
             </svg>
-            <p>O'zbek</p>
+            <p>O&apos;zbek</p>
           </div>
         </div>
         <div className={styles.login_right_middle}>

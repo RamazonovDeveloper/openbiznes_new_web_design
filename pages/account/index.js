@@ -7,7 +7,7 @@ import MainModalComponent from "../../components/mainModal";
 import SaveToggleButton from "../../components/saveToggleBtnComponent";
 import AllAccountsInput from "../../components/allAccountsInput/allAccountsInput";
 
-export default function index() {
+export default function Index() {
   const [dateFilter, setDateFilter] = useState(false);
 
   const [colorIcon, setColorIcon] = useState("#A5A1A1");
@@ -111,7 +111,12 @@ export default function index() {
     <div className={styles.account}>
       {/* <DefaultModalComponent /> */}
       {
-        isRekModal && <MainModalComponent  title={"Реквизиты"} children={rekvizitFrame()} />
+        // isRekModal && <MainModalComponent  title={"Реквизиты"} children={rekvizitFrame()} />
+        isRekModal && <MainModalComponent  title={"Реквизиты"} >
+          {
+            rekvizitFrame()
+          }
+        </MainModalComponent>
       }
       
 
