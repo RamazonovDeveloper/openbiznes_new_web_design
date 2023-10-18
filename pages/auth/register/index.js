@@ -218,12 +218,11 @@ export default function RegisterPage() {
         </div>
         <div className={styles.login_right_middle}>
           <h4>
-            Директор компанииOOO “Best Group” Алексей Сидоров назначил вас
-            бухгалтером компании{" "}
+          Вас назначили  бухгалтером компании OOO “Best Group” 
           </h4>
           <div className={styles.register_middle_btns}>
-            <button>Войти</button>
-            <button>Продолжить с ЭЦП</button>
+            <button>Отклонить</button>
+            <button>Принять</button>
           </div>
         </div>
         <div className={styles.login_right_bottom}>

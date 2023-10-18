@@ -1,189 +1,186 @@
-.home_main_transactions_filterBtn {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: Manrope;
+.accounts_input {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   text-align: left;
-
-  padding: 10px;
+  color: #342c2c;
   border: 1px solid #d2d0d0;
+  background-color: #eeeeee99;
+  padding: 11px 10px;
   border-radius: 5px;
   position: relative;
-
-  background-color: #eeeeee99;
+  min-width: 157px;
 }
 
-.home_main_transactions_filterBtn_main {
+.accounts_input_main {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.home_main_transactions_filterBtn_main > p {
-  margin-left: 10px;
-  margin-right: 16px;
-}
-
-.home_main_transactions_filterBtn:last-child {
-  margin-left: 20px;
-}
-
-.home_main_transactions_filterBtn > p {
-  margin-left: 10px;
-  margin-right: 16px;
-}
-
-.home_main_transactions_filterBtn > span {
-  margin-right: 118px;
-}
-
-.home_main_transactions_filterBtn_icon {
-  transition: 0.5s ease;
+.accounts_input_main_texts {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.accounts_input_main_texts_span {
+  width: 5px;
+  height: 5px;
+  background-color: #777373;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+
+.accounts_input_main_icon {
+  transition: 0.5s ease;
+}
+
+.accounts_input_main_icon_active {
+  transition: 0.5s ease;
   transform: rotate(180deg);
-  position: relative;
 }
 
-.home_main_transactions_filterBtn_icon_active {
-  transform: rotate(360deg);
-}
-
-.home_main_transactions_filterBtn_icon_date_modal {
-  /* width: 200px;
-      height: 150px; */
-  background-color: white;
+.accounts_input_modal {
+  width: calc(253px);
+  padding: 8px 4px;
   position: absolute;
-  z-index: 10;
+  background-color: white;
+  z-index: 30;
+  top: calc(100% + 10px);
+  left: 0;
   border-radius: 8.91px;
   box-shadow: 0px 10px 60px 0px #0000001a;
-  padding: 8px 4px;
-  top: 50px;
-  left: 0;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn {
+.accounts_input_modal_search {
   display: flex;
-  justify-content: space-between;
-  border: none;
-  padding: 7px 16px;
-  width: 245px;
+  padding: 10px;
+  background-color: #eeeeee99;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
 
+.accounts_input_modal_search input {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   text-align: left;
+  color: #342c2c;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+  flex-grow: 1;
+}
 
-  margin-bottom: 2px;
-
+.accounts_input_modal_item {
+  padding: 7px 16px;
   border-bottom: 1px dashed #eeeeee;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn:hover {
-  background-color: #ede7f3;
-  border-radius: 5px;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_btn:last-child {
+.accounts_input_modal_item:last-child {
   border: none;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btn_active {
-  background-color: #ede7f3;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_btn_icon {
-  display: none;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_btn_icon_active {
-  display: flex;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_line {
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed #eeeeee;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_date {
+.accounts_input_modal_item_main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 0 16px;
-  width: 245px;
-
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.07800000160932541px;
-  text-align: left;
-
-  border-radius: 5px;
-  background-color: transparent;
-  margin-bottom: 8px;
-
-  color: #777373;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btns {
+.accounts_input_modal_btns {
+  padding: 8px 16px;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 0 16px;
-
-  width: 245px;
-  font-family: Manrope;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.23999999463558197px;
-  border-radius: 5px;
-  background-color: transparent;
+  justify-content: flex-end;
   margin-top: 8px;
 }
 
-.home_main_transactions_filterBtn_icon_date_modal_btns > button {
+.accounts_input_modal_btns_btn {
+  font-family: Manrope;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
-
-  border-radius: 5px;
-  padding: 8px 16px;
-  border: none;
-
-  background-color: #e8e8e8;
-}
-
-.home_main_transactions_filterBtn_icon_date_modal_btns > button:hover {
-  background-color: #d2d0d0;
-}
-
-.violetBtn {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0px;
-  text-align: center;
-
-  border-radius: 5px;
-  padding: 8px 16px;
-  border: none;
-
-  background-color: #e8e8e8;
-
   color: #956fb9;
-  background-color: white !important;
+  width: 100px;
+  padding: 8px 0;
+  border-radius: 5px;
 }
 
-.violetBtn:hover {
-  color: #4e0f8a;
+.accounts_input_modal_btns_btn_gray {
+  background-color: #e8e8e8;
+  color: #342c2c;
+  margin-left: 10px;
+}
+
+.accounts_input_modal_item_modal_item,
+.accounts_input_modal_item_modal_item_last {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+  padding: 6px 16px;
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.accounts_input_modal_item_modal_item_last {
+  border: none;
+}
+
+.accounts_input_modal_item_modal_item:hover {
+  background-color: #ede7f3;
+  border-color: #ede7f3;
+  border-radius: 5px;
+}
+
+.accounts_input_modal_item_modal_item_active {
+  background-color: #ede7f3;
+  padding: 7px 16px;
+}
+
+.accounts_input_modal_item_modal_item > p {
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  color: #777373;
+}
+
+@media screen and (max-width: 1450px) {
+  .accounts_input {
+    min-width: 150px;
+  }
+}
+
+.dateInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  margin-top: 8px;
+}
+
+.dateInput_wrapper {
+  width: 180px;
+}
+
+.dateInput_items {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dateInput_items input{
+  background-color: transparent;
+  outline: none;
+}
+.dateInput_items input[type="date"]::-webkit-inner-spin-button,
+.dateInput_items input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }

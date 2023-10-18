@@ -5,8 +5,7 @@ export const data = {
         nav_link_3:"Mobil Dastur",        
         nav_link_4:"Kompaniya Haqida",
         nav_link_5:"Aloqa",
-
-
+        
         header_title1:"Open Banking Barcha banklar uchun yagona foydalanuvchi interfeysi",
         header_text:"Open Banking – bu yagona ruxsat nuqtasi orqali har xil banklarning xizmatlaridan foydalanish imkonini taqdim etgan holda, yuridik shaxslar va yakka tartibdagi tadbirkorlarga bank xizmatlarini masofadan koʻrsatishga moʻljallangan omnikanal platforma.",
 
