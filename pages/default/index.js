@@ -1,6 +1,6 @@
 // import CountUp from "react-countup";
 import { useEffect, useState } from "react";
-import { data } from "./data";
+import { data } from "../../utils/data";
 import Link from "next/link";
 import BlankLayout from "../../layouts/BlankLayout";
 import styles from "./default.module.css";
