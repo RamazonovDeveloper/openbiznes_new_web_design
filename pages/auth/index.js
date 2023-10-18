@@ -227,7 +227,7 @@ export default function AuthPage() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_2049_24630)">
+              <g clipPath="url(#clip0_2049_24630)">
                 <path
                   d="M4.83564 12.1101C4.83564 8.18285 8.02038 4.99811 11.9476 4.99811H24V0H12C5.37196 0 0 5.37196 0 12C0 18.628 5.37196 24 12 24H24V19.222H11.9476C8.02038 19.222 4.83564 16.0373 4.83564 12.1101Z"
                   fill="white"
