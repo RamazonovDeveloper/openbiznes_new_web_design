@@ -4,11 +4,26 @@ import InputDivComponent from "../../../components/inputDivComponent";
 import { useAuth } from "../../../hooks/useAuth";
 import BlankLayout from "../../../layouts/BlankLayout";
 import styles from "./login.module.css";
+import { useRouter } from "next/router";
 
 export default function LoginPage() {
   const auth = useAuth();
 
   const [comp, setComp] = useState("tel");
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    localStorage.setItem(
+      "companyInfo",
+      '{"name":"FUTURE OPEN TECHNOLOGY GROUP MCHJ","owner_phone":"+998946914977","inn":"306687969","slug":"future-open-technology-group-mchj","created_at":"2023-08-30T04:31:37.000000Z","companyTin":"306687969"}'
+    );
+    localStorage.setItem(
+      "access_token",
+      '"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmZjZmY4YjFhOTdmYjczOWFkYzhhNmVkMWU4NWM1NmFhMDdhOTQzNmU4NmU3ZmQyNGI1NTRhNTYyNGM1Yzk0M2RhNDY2ODA0NTg0YzNkYzQiLCJpYXQiOjE2OTQwODUzNjMuNzkwOTcsIm5iZiI6MTY5NDA4NTM2My43OTA5NzMsImV4cCI6MTcyNTcwNzc2My43NjkzNTYsInN1YiI6IjEiLCJzY29wZXMiOlsiKiJdfQ.O_UtCkGIUHupGOiCRgeJmp8_Y8DiAwNz3j33vkbSY7UfjfZ58PVfUXwVagoq4fHZvXpZf-9Z9NOhK6v8iHqIlBfS8dKIdM1ZdE0ojVgVXDPDmufebp9sRvR11-kCwSUMtHFjZcAXjZmoPHSkBbfQ6rPmFizg4tSzH59BhA7kuEhFFtkwiwXHW4SOIMwXhEcqxNkGiX2fs5NujLdJhLYfAjp10HTaqUjZdq3h0Lb4Q8qRL4qEPN-SBzJh-Rn6Q4v2jYaSBkBoZtetN7EPhk8XIRvxtVJeW0IvriuBUb3HApuyyXWVauVNemKuGonZuAWyupsTW9x25lPeksR4PZDIcrzIs7lFoBUF_IkNXzIv4JQw2Mupe-mvTfUuBzU8xMUmcYlsFbOvPwmUemMfq09VaWhOqu7FqjdBQqlFF8r2EBBhsGRx2RF4NgI0JWw2z9iSkLLEOATou1DsEJV4F1EYxQ6Fh4mIpBFisEiMqQse8p3S-hXlllEkY1g84m-ZOV5WVJgcKyIj1z34CYZvPTE5uGP0A7iY5Dui25RmsvlMgW0XtdjFweFlC4qnFrDhM957qbz3LnM8z7IQKi-5iUQKITviOpn8-5H8GdNoOSFnQhFRP5ENv_sDlhaiyEYBBDP9UlM8m0xwma86Hdx8gm1r1S1SIGobKIoFpOAFEPoS10s"'
+    );
+    router.push("/home");
+  };
 
   return (
     <div className={styles.login}>
@@ -262,6 +277,7 @@ export default function LoginPage() {
                 className={`${styles.login_right_middle_btn} ${
                   false && styles.login_right_middle_btn_unactive
                 }`}
+                onClick={() => handleClick()}
               >
                 Продолжить
               </button>
@@ -301,6 +317,7 @@ export default function LoginPage() {
               className={`${styles.login_right_middle_btn} ${
                 false && styles.login_right_middle_btn_unactive
               }`}
+              onClick={() => handleClick()}
             >
               Продолжить
             </button>
