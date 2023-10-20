@@ -5,7 +5,7 @@
 
 .login_left {
   width: 67.448%;
-  background: url("../../public/bg.png");
+  background: url("../../../public/bg.png");
   height: 100%;
   display: flex;
   justify-content: center;
@@ -97,9 +97,8 @@
 .login_right_middle {
   display: flex;
   flex-direction: column;
-  width: 426px;
+  width: 450px;
   margin-left: 90px;
-  /* justify-content: center; */
 }
 
 .login_right_middle > h4 {
@@ -108,39 +107,31 @@
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 0.3799999952316284px;
+  text-align: left;
+  color: #000000;
+
+  margin-bottom: 45px;
 }
 
-.login_right_middle > button {
+.register_middle_btns {
+  width: 100%;
+}
+
+.register_middle_btns button {
+  width: 100%;
   background-color: #4e0f8a;
   border: none;
-
   font-family: Manrope;
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 0.035em;
+  text-align: center;
+  color: #ffffff;
   padding: 8px 0;
   border-radius: 5px;
   margin-top: 45px;
   margin-bottom: 8px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.login_right_middle > button:hover {
-  background-color: #602796;
-}
-
-.login_right_middle > p {
-  color: #777373;
-  font-family: Manrope;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: -0.3199999928474426px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -163,12 +154,16 @@
   }
 
   .login_right_middle > h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .login_right_bottom {
     bottom: 20px;
     font-size: 14px;
+  }
+
+  .register_middle_btns button {
+    font-size: 12px;
   }
 
   .login_left_components_item {

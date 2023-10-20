@@ -5,7 +5,7 @@ import ButtonComponent from "../buttonComponent";
 export default function SelectComponent({ children, width, title, data }) {
   const [isModalActive, setModalActive] = useState(false);
 
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(title || '');
 
   const handleClick = (e) => {
     console.log(e);

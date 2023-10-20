@@ -169,6 +169,17 @@
   background-color: transparent;
 }
 
+.home_main_transactions_table{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.home_main_transactions_table_wrapper{
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
 .home_main_transactions_table_date {
   width: 100%;
   background-color: #eeeeee;

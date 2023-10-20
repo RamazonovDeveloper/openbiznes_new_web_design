@@ -1,4 +1,8 @@
 .accounts_input {
+  min-width: 280px;
+}
+
+.accounts_input {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -10,21 +14,19 @@
   padding: 11px 10px;
   border-radius: 5px;
   position: relative;
-  min-width: 157px;
 }
 
 .accounts_input_main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
   user-select: none;
+  cursor: pointer;
 }
 
 .accounts_input_main_texts {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .accounts_input_main_texts_span {
@@ -46,7 +48,7 @@
 }
 
 .accounts_input_modal {
-  width: calc(253px);
+  width: calc(100%);
   padding: 8px 4px;
   position: absolute;
   background-color: white;
@@ -119,25 +121,20 @@
   margin-left: 10px;
 }
 
-.accounts_input_modal_item_modal_item,
-.accounts_input_modal_item_modal_item_last {
+.accounts_input_modal_item_modal_item {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   color: #342c2c;
-  padding: 6px 16px;
+  padding: 7px 16px;
   border-bottom: 1px dashed #eeeeee;
-}
-
-.accounts_input_modal_item_modal_item_last {
-  border: none;
 }
 
 .accounts_input_modal_item_modal_item:hover {
   background-color: #ede7f3;
-  border-color: #ede7f3;
   border-radius: 5px;
+  border-color: #ede7f3;
 }
 
 .accounts_input_modal_item_modal_item_active {
@@ -146,42 +143,33 @@
 }
 
 .accounts_input_modal_item_modal_item > p {
+  font-family: Manrope;
   font-size: 11px;
+  font-weight: 400;
   line-height: 13px;
   letter-spacing: 0.06599999964237213px;
+  text-align: left;
+
   color: #777373;
+}
+
+.accounts_input_modal_item_modal_item > p > span {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  margin-left: 8px;
+  color: #342C2C;
+}
+
+.accounts_input_modal_item_modal_item:last-child{
+  border: none;
 }
 
 @media screen and (max-width: 1450px) {
   .accounts_input {
-    min-width: 150px;
+    min-width: 200px;
   }
-}
-
-.dateInput {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 16px;
-  margin-top: 8px;
-}
-
-.dateInput_wrapper {
-  width: 180px;
-}
-
-.dateInput_items {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.dateInput_items input{
-  background-color: transparent;
-  outline: none;
-}
-.dateInput_items input[type="date"]::-webkit-inner-spin-button,
-.dateInput_items input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
 }

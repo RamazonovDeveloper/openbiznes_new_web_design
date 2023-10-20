@@ -10,6 +10,7 @@ import TypeOperation from "../../components/typeOperation/typeOperation";
 import AllAccountsInput from "../../components/allAccountsInput/allAccountsInput";
 import AllContragentsInput from "../../components/allContragensInput/allContragents";
 import IntervalInput from "../../components/intervalInput/intervalInput";
+import AllTimeInput from "../../components/allTimeInput/allTime";
 
 export default function TransactionsPage() {
   const [dateFilter, setDateFilter] = useState(false);
@@ -21,10 +22,11 @@ export default function TransactionsPage() {
       <CardComponent>
         <div className={styles.transaction_wrapper}>
           <div className={styles.transaction_header}>
-            <IntervalInput />
+            {/* <IntervalInput /> */}
+            <AllTimeInput />
             <AllAccountsInput />
-            <AllContragentsInput/>
-            <AllTransactionsInput/>
+            <AllContragentsInput />
+            <AllTransactionsInput />
           </div>
           <div className={styles.transaction_table}>
             <div className="">
@@ -32,6 +34,9 @@ export default function TransactionsPage() {
                 className={`${styles.transaction_table_item} ${
                   accordion == "1" && styles.transaction_table_item_active
                 }`}
+                onClick={() =>
+                  accordion == "1" ? setAccordion(false) : setAccordion("1")
+                }
               >
                 <div className={styles.transaction_table_item_left}>
                   <svg
@@ -329,7 +334,7 @@ export default function TransactionsPage() {
                           </svg>
                         </div>
                       </ButtonComponent>
-                      <div style={{display:"unset"}}>
+                      <div style={{ display: "unset" }}>
                         <SaveToggleButton />
                       </div>
                     </div>
@@ -337,7 +342,12 @@ export default function TransactionsPage() {
                 </div>
               )}
             </div>
-            <div className={styles.transaction_table_item}>
+            <div
+              className={styles.transaction_table_item}
+              onClick={() =>
+                accordion == "2" ? setAccordion(false) : setAccordion("2")
+              }
+            >
               <div className={styles.transaction_table_item_left}>
                 <svg
                   width="30"

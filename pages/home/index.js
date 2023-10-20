@@ -6,21 +6,17 @@ import HomeDocuments from "../../views/home/documents/homeDocuments";
 import HomeTransactions from "../../views/home/transactions/homeTransactions";
 
 export default function HomePage() {
-
   return (
     <div className={styles.home}>
-      
       <HomeHeader />
 
       <div className={styles.home_main}>
         <div className={styles.home_main_left}>
           <HomeAccounts />
-          <HomeDocuments/>
+          <HomeDocuments />
         </div>
-        <HomeTransactions/>
-        
+        <HomeTransactions />
       </div>
-
     </div>
   );
 }

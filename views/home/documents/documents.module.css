@@ -2,9 +2,13 @@
 .home_main_documents {
   border-radius: 8.91px;
   background-color: white;
-  padding: 20px;
   /* overflow-y: auto; */
   box-shadow: 0px 10px 20px 0px #0000001a;
+  height: 31.719%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .home_main_account_title {
@@ -18,7 +22,8 @@
 }
 
 .home_main_account_items{
-  height: 90%;
+  flex-grow: 1;
+  /* height: 90%; */
   overflow-y: auto;
   padding-right: 10px;
 }

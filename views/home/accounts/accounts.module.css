@@ -1,5 +1,12 @@
 .home_account{
-  height: fit-content;
+  height: 64.458%;
+  
+}
+
+.home_account > div {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .home_main_account,
@@ -23,8 +30,9 @@
 
 .home_main_account_items{
   overflow-y: scroll;
-  max-height: 420px;
+  /* max-height: 420px; */
   padding-right: 10px;
+  flex-grow: 1;
 }
 
 .home_main_account_items_item {
@@ -110,7 +118,7 @@
 
 @media screen and (max-width:1500px) {
   .home_main_account_items{
-    max-height: 400px;
+    /* max-height: 400px; */
   }
 
   .home_main_account_items_item p,
