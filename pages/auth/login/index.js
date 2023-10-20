@@ -13,7 +13,6 @@ export default function LoginPage() {
 
   const router = useRouter();
 
-  // const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(59);
 
   useEffect(() => {

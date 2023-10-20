@@ -6,6 +6,8 @@
 .login_left {
   width: 67.448%;
   background: url("../../../public/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -37,24 +39,32 @@
   background-color: #ffffff1a;
 
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-}
 
-.login_left_components_item {
-  font-family: Manrope;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.3799999952316284px;
-  text-align: center;
   color: #ffffff;
 
-  padding: 40px 20.5px 15px;
+  padding-bottom: 15px;
+  /* padding: 40px 20.5px 15px; */
+}
+
+.login_left_components_item > svg {
+  margin-top: 40px;
 }
 
 .login_left_components_item > p {
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
+
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.3799999952316284px;
 }
 
 .login_right {
@@ -232,7 +242,7 @@
   letter-spacing: -0.07800000160932541px;
   flex-grow: 1;
   text-align: left;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .login_right_middle_input_error {

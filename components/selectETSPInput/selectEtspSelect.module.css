@@ -11,7 +11,6 @@
   color: #342c2c;
   border: 1px solid #d2d0d0;
   background-color: #eeeeee99;
-  padding: 11px 10px;
   border-radius: 5px;
   position: relative;
 }
@@ -22,11 +21,35 @@
   align-items: center;
   user-select: none;
   cursor: pointer;
+  height: 40px;
+  padding: 0 10px;
 }
 
 .accounts_input_main_texts {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.accounts_input_main_texts h4 {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #342c2c;
+}
+
+.accounts_input_main_texts p {
+  font-family: Manrope;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  text-align: left;
+  color: #777373;
 }
 
 .accounts_input_main_texts_span {
@@ -134,6 +157,7 @@
 .accounts_input_modal_item_modal_item:hover {
   background-color: #ede7f3;
   border-radius: 5px;
+  cursor: pointer;
   border-color: #ede7f3;
 }
 
@@ -161,10 +185,10 @@
   letter-spacing: -0.07800000160932541px;
   text-align: left;
   margin-left: 8px;
-  color: #342C2C;
+  color: #342c2c;
 }
 
-.accounts_input_modal_item_modal_item:last-child{
+.accounts_input_modal_item_modal_item:last-child {
   border: none;
 }
 

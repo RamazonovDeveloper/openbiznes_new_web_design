@@ -10,7 +10,10 @@ export default function SelectETSPInput() {
         className={styles.accounts_input_main}
         onClick={() => setModal(!modal)}
       >
-        <div className={styles.accounts_input_main_texts}>Выберите</div>
+        <div className={styles.accounts_input_main_texts}>
+          <h4>FUTURE OPEN TEHNOLOGY GROUP</h4>
+          <p>77У1682D</p>
+        </div>
 
         <div
           className={`${styles.accounts_input_main_icon} ${
