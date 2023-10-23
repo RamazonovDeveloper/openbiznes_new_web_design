@@ -252,10 +252,11 @@ export default function DocumentTable() {
                   <div
                     className={styles.table_data_item_accordion_left_item_text}
                   >
-                    <div className={styles.gray_text}>
-                    Код назначения
+                    <div className={styles.gray_text}>Код назначения</div>
+                    <div>
+                      08102 Оплата налогов и других обязательных платежей по
+                      расчёту{" "}
                     </div>
-                    <div>08102  Оплата налогов и других обязательных платежей по расчёту  </div>
                   </div>
                   <div
                     className={styles.table_data_item_accordion_left_item_text}
@@ -273,10 +274,9 @@ export default function DocumentTable() {
               </div>
               <div className={styles.table_data_item_accordion_right}>
                 <div className={styles.table_data_item_accordion_right_pdf}>
-                  <div>ПП  №11902</div>
-                  <iframe 
-                    src="https://www.africau.edu/images/default/sample.pdf"
-                    frameBorder="0"
+                  <div>ПП №11902</div>
+                  <iframe
+                    src="https://www.bis.org/cpmi/glossary_030301.pdf"
                   ></iframe>
                 </div>
               </div>

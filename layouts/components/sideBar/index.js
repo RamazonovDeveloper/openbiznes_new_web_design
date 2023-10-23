@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./sideBar.module.css";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function SideBar() {

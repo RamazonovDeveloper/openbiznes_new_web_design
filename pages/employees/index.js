@@ -6,7 +6,7 @@ import EmployeeTable from '../../views/empoyees/employeesTable/employeeTable'
 
 export default function Employees() {
 
-  const [addEmp, setAddEmp] = useState(true);
+  const [addEmp, setAddEmp] = useState(false);
 
   return (
     <div className={styles.employee}>

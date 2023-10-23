@@ -4,6 +4,8 @@
   width: 18.12%;
   background: url("/BG 2.jpg");
   z-index: 1000;
+  background-size: cover;
+
 }
 
 .sidebar_container {

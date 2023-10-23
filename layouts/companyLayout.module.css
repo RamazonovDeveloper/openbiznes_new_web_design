@@ -20,7 +20,7 @@
   background-color: #eeeeee;
   height: 100vh;
   position: relative;
-  overflow-y: hidden;
+  overflow-y: auto;
 /* margin-left: 18.12% ; */
 }
 

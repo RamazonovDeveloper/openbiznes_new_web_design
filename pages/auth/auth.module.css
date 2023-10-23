@@ -13,47 +13,10 @@
   position: relative;
 }
 
-.login_left_logo {
-  position: absolute;
-  left: 60px;
-  top: 40px;
-}
-
 .login_right {
   width: 32.552%;
   display: flex;
   align-items: center;
-}
-
-.login_left_components {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 530px;
-  gap: 10px;
-}
-
-.login_left_components_item {
-  border-radius: 8.91px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  background-color: #ffffff1a;
-}
-
-.login_left_components_item {
-  font-family: Manrope;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.3799999952316284px;
-  text-align: center;
-  color: #ffffff;
-  padding: 40px 20.5px 15px;
-}
-
-.login_left_components_item > p {
-  margin-top: 10px;
 }
 
 .login_right {
@@ -144,10 +107,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .login_left_logo svg {
-    width: 100px;
-  }
-
   .login_right_top {
     top: 20px;
   }
@@ -169,15 +128,5 @@
   .login_right_bottom {
     bottom: 20px;
     font-size: 14px;
-  }
-
-  .login_left_components_item {
-    font-size: 13px;
-    padding: 30px 10.5px 20px;
-    line-height: 20px;
-  }
-
-  .login_left_components_item svg {
-    width: 40px;
   }
 }

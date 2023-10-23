@@ -6,10 +6,16 @@ import MainModalComponent from "../../components/mainModal";
 import InputComponent from "../../components/inputComponent";
 
 export default function Profile() {
-  const [edit, setEdit] = useState(true);
+  const [edit, setEdit] = useState(false);
 
-  function closeModal(){
-    setEdit(false)
+  const [remove, setRemove] = useState(true);
+
+  function closeModal() {
+    setEdit(false);
+  }
+
+  function closeRemoveModal() {
+    setRemove(false);
   }
 
   const modalProps = () => {
@@ -74,6 +80,29 @@ export default function Profile() {
     );
   };
 
+  const closeModalProps = () => {
+    return (
+      <div>
+        <div className={styles.edit_modal_remove}>
+          <p className={styles.edit_modal_remove_title}>Вы точно хотите завершить этот сеанс?</p>
+        </div>
+        <div className={styles.edit_btns}>
+          <ButtonComponent
+            type={"adaptive_gray"}
+            height={"32px"}
+            padding={"23px"}
+            handleClick={closeModal}
+          >
+            <p className={styles.edit_btns_btn}>Отмента</p>
+          </ButtonComponent>
+          <ButtonComponent type={"adaptive"} height={"32px"} padding={"23px"}>
+            <p className={styles.edit_btns_btn}>Завершить</p>
+          </ButtonComponent>
+        </div>
+      </div>
+    );
+  };
+
   console.log(edit);
 
   return (
@@ -84,6 +113,15 @@ export default function Profile() {
           closeModalFunction={closeModal}
         >
           {modalProps()}
+        </MainModalComponent>
+      )}
+
+      {remove && (
+        <MainModalComponent
+          title={"Завершить сеанс"}
+          closeModalFunction={closeRemoveModal}
+        >
+          {closeModalProps()}
         </MainModalComponent>
       )}
 
@@ -213,7 +251,7 @@ export default function Profile() {
             </div>
             <div className={styles.profile_table_item}>
               <div className={styles.profile_table_item_name}>
-                <svg  
+                <svg
                   width="30"
                   height="30"
                   viewBox="0 0 30 30"
@@ -252,18 +290,20 @@ export default function Profile() {
                   <span></span>
                   <p>14:44</p>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
-                    fill="#342C2C"
-                  />
-                </svg>
+                <div onClick={() => setRemove(true)}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
+                      fill="#342C2C"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className={styles.profile_table_item}>
@@ -307,18 +347,20 @@ export default function Profile() {
                   <span></span>
                   <p>14:44</p>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
-                    fill="#342C2C"
-                  />
-                </svg>
+                <div onClick={() => setRemove(true)}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
+                      fill="#342C2C"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className={styles.profile_table_item}>
@@ -362,18 +404,20 @@ export default function Profile() {
                   <span></span>
                   <p>14:44</p>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
-                    fill="#342C2C"
-                  />
-                </svg>
+                <div onClick={() => setRemove(true)}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
+                      fill="#342C2C"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className={styles.profile_table_item}>
@@ -417,18 +461,20 @@ export default function Profile() {
                   <span></span>
                   <p>14:44</p>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
-                    fill="#342C2C"
-                  />
-                </svg>
+                <div onClick={() => setRemove(true)}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
+                      fill="#342C2C"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className={styles.profile_table_item}>
@@ -472,18 +518,20 @@ export default function Profile() {
                   <span></span>
                   <p>14:44</p>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
-                    fill="#342C2C"
-                  />
-                </svg>
+                <div onClick={() => setRemove(true)}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46077 6L6 6.46077L11.5392 12L6 17.5392L6.46077 18L12 12.4608L17.5392 18L18 17.5392L12.4608 12L18 6.46077L17.5392 6L12 11.5392L6.46077 6Z"
+                      fill="#342C2C"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
