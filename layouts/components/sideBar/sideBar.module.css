@@ -5,14 +5,13 @@
   background: url("/BG 2.jpg");
   z-index: 1000;
   background-size: cover;
-
 }
 
 .sidebar_container {
   margin-left: 60px;
   margin-right: 30px;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 58px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,16 +19,12 @@
 }
 
 .company_name {
-  /* border: 1px solid; */
   border-radius: 8.91px;
   padding: 10px;
   margin-top: 38px;
   margin-bottom: 40px;
   position: relative;
   cursor: pointer;
-  padding-top: 14px;
-  /* border: 1px solid #ffffff40; */
-  /* background-color: rgba(255, 255, 255, 0.004); */
 }
 
 .company_name_active {
@@ -45,7 +40,7 @@
 }
 
 .company_name > p {
-  margin: 0;;
+  margin: 0;
   font-size: 17px;
   font-weight: 500;
   line-height: 22px;
@@ -61,7 +56,7 @@
 
 .company_name_actions > p {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -124,13 +119,25 @@
 .sidebar_bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 15px;
+  padding-right: 3px;
+}
+
+.sidebar_bottom_item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+}
+
+.sidebar_bottom_item:nth-child(2){
+  width: 77px!important;
 }
 
 .sidebar_bottom_item > div {
   display: flex;
   align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between;
   font-size: 17px;
   font-weight: 400;
   line-height: 22px;
@@ -140,6 +147,13 @@
 
 .sidebar_bottom_item p {
   margin: 0;
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #F4FCF9;
 }
 
 .home_navbar_toggle {
@@ -215,7 +229,7 @@
     font-size: 14px;
   }
 
-  .sidebar_menu_wrapper_link_active{
+  .sidebar_menu_wrapper_link_active {
     padding: 15px 20px;
   }
 
@@ -237,13 +251,12 @@
     margin-top: 18px;
   }
 
-  .sidebar_bottom 
-  .sidebar_bottom_item{
+  .sidebar_bottom .sidebar_bottom_item {
     font-size: 11px;
     gap: 7px;
   }
 
-  .sidebar_bottom_item p{
+  .sidebar_bottom_item p {
     font-size: 12px;
   }
 

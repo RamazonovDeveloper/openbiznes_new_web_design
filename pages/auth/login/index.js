@@ -158,7 +158,7 @@ export default function LoginPage() {
                   <input type="text" placeholder="Код" />
                 </div>
               </InputDivComponent>
-              {true && <p>{'00' + ":" + seconds}</p>}
+              {true && <p>{'00' + ":" + (seconds < 10 ? `0${seconds}` : seconds)}</p>}
               {false && (
                 <p className={styles.login_right_middle_input_error}>
                   * Этот номер уже используется
