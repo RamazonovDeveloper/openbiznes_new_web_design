@@ -10,9 +10,6 @@ export default function ButtonComponent({
   height,
   handleClick,
 }) {
-  // if(type == 'standart'){
-  //     console.log("Standart buttton !!!!");
-  // }
 
   switch (type) {
     case "standart":

@@ -8,7 +8,7 @@ import InputComponent from "../../components/inputComponent";
 export default function Profile() {
   const [edit, setEdit] = useState(false);
 
-  const [remove, setRemove] = useState(true);
+  const [remove, setRemove] = useState(false);
 
   function closeModal() {
     setEdit(false);
@@ -91,7 +91,7 @@ export default function Profile() {
             type={"adaptive_gray"}
             height={"32px"}
             padding={"23px"}
-            handleClick={closeModal}
+            handleClick={closeRemoveModal}
           >
             <p className={styles.edit_btns_btn}>Отмента</p>
           </ButtonComponent>

@@ -19,7 +19,7 @@ export default function DocumentTable() {
             activeRow == 1 && styles.table_data_item_active
           }`}
         >
-          <div className={styles.table_data_item_main}>
+          <div className={styles.table_data_item_main} onClick={() => setActiveRow(1)}>
             <div className={styles.table_data_item_main_date}>
               <div className={styles.table_data_item_main_date_icon}>
                 <svg
@@ -98,7 +98,7 @@ export default function DocumentTable() {
             activeRow == 2 && styles.table_data_item_active
           }`}
         >
-          <div className={styles.table_data_item_main}>
+          <div className={styles.table_data_item_main} onClick={() => setActiveRow(2)}>
             <div className={styles.table_data_item_main_date}>
               <div className={styles.table_data_item_main_date_icon}>
                 <svg
@@ -275,9 +275,13 @@ export default function DocumentTable() {
               <div className={styles.table_data_item_accordion_right}>
                 <div className={styles.table_data_item_accordion_right_pdf}>
                   <div>ПП №11902</div>
-                  <iframe
-                    src="https://www.bis.org/cpmi/glossary_030301.pdf"
-                  ></iframe>
+                  <embed
+                    src={'https://www.bis.org/cpmi/glossary_030301.pdf' + "#toolbar=0"}
+                    type="application/pdf"
+                    // height={800}
+                    // width={500}
+                  />
+                  {/* <iframe src="https://www.bis.org/cpmi/glossary_030301.pdf"></iframe> */}
                 </div>
               </div>
             </div>

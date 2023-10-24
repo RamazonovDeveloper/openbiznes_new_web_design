@@ -47,7 +47,7 @@ export default function DocumentPreviewPage() {
         >
           Печать
         </ButtonComponent>
-        <div>
+        <div className={styles.preview_actions_close_btn}>
           <svg
             width="24"
             height="24"
@@ -63,10 +63,10 @@ export default function DocumentPreviewPage() {
         </div>
       </div>
       <div className={styles.preview_main}>
-        <iframe
-          src="https://www.africau.edu/images/default/sample.pdf"
-          frameBorder="0"
-        ></iframe>
+        <embed
+          src={"https://www.bis.org/cpmi/glossary_030301.pdf" + "#toolbar=0"}
+          type="application/pdf"
+        />
       </div>
     </div>
   );

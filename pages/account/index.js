@@ -186,8 +186,8 @@ export default function Index() {
               </div>
               <div
                 className={styles.account_table_body_item_element_icon}
-                onMouseEnter={() => setColorIcon("#4E0F8A")}
-                onMouseLeave={() => setColorIcon("#A5A1A1")}
+                // onMouseEnter={() => setColorIcon("#4E0F8A")}
+                // onMouseLeave={() => setColorIcon("#A5A1A1")}
                 onClick={() => setModal(1)}
               >
                 <svg
@@ -306,8 +306,8 @@ export default function Index() {
               </div>
               <div
                 className={styles.account_table_body_item_element_icon}
-                onMouseEnter={() => setColorIcon("#4E0F8A")}
-                onMouseLeave={() => setColorIcon("#A5A1A1")}
+                // onMouseEnter={() => setColorIcon("#4E0F8A")}
+                // onMouseLeave={() => setColorIcon("#A5A1A1")}
               >
                 <svg
                   width="15"
@@ -354,8 +354,8 @@ export default function Index() {
               </div>
               <div
                 className={styles.account_table_body_item_element_icon}
-                onMouseEnter={() => setColorIcon("#4E0F8A")}
-                onMouseLeave={() => setColorIcon("#A5A1A1")}
+                // onMouseEnter={() => setColorIcon("#4E0F8A")}
+                // onMouseLeave={() => setColorIcon("#A5A1A1")}
               >
                 <svg
                   width="15"

@@ -18,13 +18,13 @@ function AppBar({ isTitle }) {
         <div className={styles.home_navbar_wrapper_right}>
           <div className={styles.home_navbar_balance_in_usd}>
             <div className={styles.home_navbar_balance_in_usd_wrapper}>
-              <h4 style={{whiteSpace: 'pre-wrap'}}>10 000 000 000,00    UZS</h4>
+              <h4 style={{ whiteSpace: "pre-wrap" }}>10 000 000 000,00 UZS</h4>
               <p>Средств на UZS счетах</p>
             </div>
           </div>
           <div className={styles.home_navbar_balance_in_uzs}>
             <div className={styles.home_navbar_balance_in_uzs_wrapper}>
-              <h4 style={{whiteSpace: 'pre-wrap'}}>20 000  000,00   USD </h4>
+              <h4 style={{ whiteSpace: "pre-wrap" }}>20 000 000,00 USD </h4>
               <p>Средств на USD счетах</p>
             </div>
           </div>

@@ -217,6 +217,7 @@ export default function EmployeeTable({ addEmp, setAddEmp }) {
             activeEmp == "1" &&
             styles.table_item_main_active
           }`}
+          onClick={() => handleClick("1")}
         >
           <div className={styles.table_item_name}>
             {activeEmp != "empty" && activeEmp == "1" ? (
@@ -395,6 +396,7 @@ export default function EmployeeTable({ addEmp, setAddEmp }) {
             activeEmp == "2" &&
             styles.table_item_main_active
           }`}
+          onClick={() => handleClick("2")}
         >
           <div className={styles.table_item_name}>
             {activeEmp != "empty" && activeEmp == "2" ? (
