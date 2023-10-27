@@ -1,0 +1,76 @@
+.profile_cards_left_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile_cards_left_btns_btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.profile_cards_left_black {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+}
+
+.profile_cards_left_data_item {
+  display: grid;
+  grid-template-columns: 32.5% 67.4%;
+  border-bottom: 1px dashed #eeeeee;
+  padding: 7px 0;
+  margin-top: 2px;
+}
+
+.profile_cards_left_data_item:last-child {
+  border: none;
+}
+
+.profile_cards_right_lang {
+  display: flex;
+  gap: 30px;
+}
+
+.profile_cards_right_lang,
+.profile_cards_left_data_item_sms {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #1d1515;
+}
+
+.profile_cards_left_data_item_sms {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #1d1515;
+  row-gap: 30px;
+}
+
+.profile_cards_left_gray {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #a5a1a1;
+}

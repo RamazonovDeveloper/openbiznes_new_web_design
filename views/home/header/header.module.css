@@ -1,56 +1,58 @@
-
 .home_main_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 30px;
-  }
-  
-  .home_main_header_texts > h4,
-  .home_main_header_texts > p {
-    margin: 0;
-  }
-  
-  .home_main_header_texts > h4 {
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0.3799999952316284px;
-    margin-bottom: 10px;
-  }
-  
-  .home_main_header_texts > p {
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: -0.3199999928474426px;
-  }
-  
-  .mainBtn {
-    display: flex;
-    padding: 8px, 16px, 8px, 16px;
-    border-radius: 5px;
-    background-color: #4e0f8a;
-    color: white;
-  
-    font-family: Manrope;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0.035em;
-    /* text-align: center; */
-    padding: 13px 49px;
-  
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    transition: .5s ease;
-    border: none;
-  }
-  
-  .mainBtn:hover{
-    background-color: #602796;
-  
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 30px;
+}
+
+.home_main_header_texts > h4,
+.home_main_header_texts > p {
+  margin: 0;
+}
+
+.home_main_header_texts > h4 {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.3799999952316284px;
+  color: #342c2c;
+
+  margin-top: -3px;
+  margin-bottom: 8px;
+}
+
+.home_main_header_texts > p {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.3199999928474426px;
+  color: #777373;
+}
+
+.mainBtn {
+  display: flex;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 5px;
+  background-color: #4e0f8a;
+  color: white;
+
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.035em;
+  /* text-align: center; */
+  padding: 13px 49px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.5s ease;
+  border: none;
+}
+
+.mainBtn:hover {
+  background-color: #602796;
+}

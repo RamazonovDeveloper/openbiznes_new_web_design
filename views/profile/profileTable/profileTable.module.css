@@ -1,0 +1,112 @@
+.profile_table {
+  padding-top: 5px;
+}
+
+.profile_table_title {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.profile_table_data {
+  margin-top: 15px;
+}
+
+.profile_table_header {
+  background-color: #eeeeee99;
+  border-radius: 2px;
+  padding: 5px 0 5px 0;
+  display: grid;
+  /* grid-template-columns: 331px 604px 417px; */
+  grid-template-columns: 29.1% 42% 29.1%;
+  /* 
+    1442px
+      420px
+      600px
+      420px
+      363 + 54 = 419
+  
+  
+      421px
+      604px
+      417px
+      */
+}
+
+.profile_table_header > div {
+  font-family: Manrope;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  color: #342c2c;
+}
+
+.profile_table_header > div:first-child {
+  padding-left: 90px;
+}
+
+.profile_table_item {
+  display: grid;
+  /* grid-template-columns: 421px 6 4px 1fr; */
+  grid-template-columns: 29.1% 42% 29.1%;
+
+  align-items: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  color: #342c2c;
+  border-bottom: 1px solid #eeeeee;
+  padding: 12px 0 11px;
+
+  margin-top: 10px;
+}
+
+.profile_table_item_date {
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_table_item_date_nums {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  text-align: left;
+
+  color: #342c2c;
+}
+
+.profile_table_item_date_nums span {
+  width: 5px;
+  height: 5px;
+  background-color: #d2d0d0;
+  border-radius: 50%;
+  margin-left: 9px;
+  margin-right: 11px;
+}
+
+.profile_table_item_name {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 30px;
+}
+
+.profile_table_item_remove{
+  cursor: pointer;
+}

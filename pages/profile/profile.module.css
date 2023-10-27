@@ -4,8 +4,18 @@
 }
 
 .profile_cards {
-  display: flex;
+  
+  display: grid;
+  grid-template-columns: 46.22% 51.75%;
   gap: 30px;
+
+  /* 
+    1482px
+
+    685px
+    767px
+  */
+
   /* display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px; */

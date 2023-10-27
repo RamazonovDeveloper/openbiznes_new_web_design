@@ -16,6 +16,7 @@
   display: flex;
   padding-bottom: 20px;
   gap: 20px;
+  margin-top: -1px;
 }
 
 .home_main_account_title {
@@ -182,7 +183,7 @@
 
 .home_main_transactions_table_date {
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #EEEEEE99;
   padding: 5px 30px;
   border-radius: 2px;
   margin-bottom: 10px;
@@ -197,10 +198,11 @@
 }
 
 .home_main_transactions_table_item {
-  padding: 12px 30px;
+  padding: 12px 30px 11px;
   display: flex;
-  gap: 15px;
+  gap: 16px;
   border-bottom: 1px solid #eeeeee;
+  width: 99.3%;
 }
 
 .home_main_transactions_table_item_left {
@@ -208,7 +210,10 @@
 }
 
 .home_main_transactions_table_item_left > div {
-  margin-right: 17px;
+  margin-right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .home_main_transactions_table_item_left h4 {
@@ -243,6 +248,8 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   color: #777373;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .home_main_transactions_table_item_right h4 {
@@ -256,26 +263,34 @@
   color: #777373;
 }
 
-.home_main_transactions_table_item_right > div {
+.home_main_transactions_table_item_right_main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.home_main_transactions_table_item_right_main_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .home_main_transactions_table_item_right_status {
   /* font-weight: 500; */
   position: relative;
+  margin-bottom: 4px;
 }
 
 .home_main_transactions_table_item_right_status::before {
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   background: #1ab759;
   position: absolute;
   top: calc(50% - 3px);
   border-radius: 50%;
-  left: -10px;
+  left: -16px;
 }
 
 .home_main_transactions_table_item_right > h3 {

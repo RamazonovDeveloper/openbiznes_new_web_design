@@ -13,7 +13,7 @@
 }
 
 .transaction_table_item {
-  padding: 12px 30px;
+  padding: 12px 30px 11px;
   display: grid;
   grid-template-columns: 19.4% 66.4% 14.2%;
   border-bottom: 1px solid #eeeeee;
@@ -36,6 +36,15 @@
   line-height: 18px;
   letter-spacing: -0.07800000160932541px;
   /* text-align: center; */
+  color: #342c2c;
+}
+
+.transaction_table_item_left > p {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
   color: #342c2c;
 }
 
@@ -81,12 +90,12 @@
 
 .transaction_table_item_right > div > span::before {
   content: "";
-  width: 5px;
-  height: 5px;
-  background-color: #1ab759;
+  width: 8px;
+  height: 8px;
+  background-color: #2DC28D;
   position: absolute;
-  top: calc(50% - 2px);
-  left: -10px;
+  top: calc(50% - 5px);
+  left: -18px;
   border-radius: 50%;
 }
 
@@ -134,16 +143,15 @@
   align-items: center;
 }
 
-
-.transaction_table_item_accordion_body{
+.transaction_table_item_accordion_body {
   width: 600px;
 }
 
-.transaction_table_item_accordion_body_item{
+.transaction_table_item_accordion_body_item {
   margin-top: 30px;
 }
 
-.transaction_table_item_accordion_body_th{
+.transaction_table_item_accordion_body_th {
   padding: 5px 0;
 }
 
@@ -154,7 +162,7 @@
   padding: 7px 0;
 }
 
-.transaction_table_item_accordion_body_col:last-child{
+.transaction_table_item_accordion_body_col:last-child {
   border: none;
 }
 
@@ -169,13 +177,10 @@
   color: #a5a1a1;
 }
 
-
 /* 
   210
   606
 */
-
-
 
 /* START FILTER STYLES */
 
@@ -200,7 +205,7 @@
   border: 1px solid #d2d0d0;
   border-radius: 5px;
   position: relative;
-  background-color: #EEEEEE99;
+  background-color: #eeeeee99;
 }
 
 .home_main_transactions_filterBtn > p {
@@ -270,7 +275,6 @@
   border-bottom: 1px dashed #eeeeee;
 }
 
-
 .home_main_transactions_filterBtn_icon_date_modal_date {
   display: flex;
   justify-content: space-between;
@@ -333,8 +337,8 @@
   border-radius: 2px;
 }
 
-@media screen and (max-width:1500px) {
-  .transaction_table_item_right > div{
+@media screen and (max-width: 1500px) {
+  .transaction_table_item_right > div {
     align-items: center;
   }
 }

@@ -5,29 +5,34 @@ import ButtonComponent from "../../components/buttonComponent";
 import SaveToggleButton from "../../components/saveToggleBtnComponent";
 import { useRouter } from "next/router";
 import DefaultModalComponent from "../../components/defaultModal";
+import TypeOperation from "../../components/typeOperation/typeOperation";
 
 export default function PaymentTemplates() {
   const [activeCard, setActiveCard] = useState("empty");
 
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
 
   const handleClick = (nums) => {
     setActiveCard(nums);
   };
 
-  const router = useRouter()
+  const router = useRouter();
 
   const handleBtnClick = () => {
-    router.push('/templates/create')
-  }
+    router.push("/templates/create");
+  };
 
   return (
     <div className={styles.payment_tem}>
-      {
-        modal && <DefaultModalComponent success={true} closeModalFunction={() => setModal(false)}/>
-      }
+      {modal && (
+        <DefaultModalComponent
+          success={true}
+          closeModalFunction={() => setModal(false)}
+        />
+      )}
       <CardComponent>
         <div className={styles.payment_tem_filters}>
+          <TypeOperation />
           <div className={styles.payment_tem_filters_search}>
             <input type="text" placeholder="Поиск шаблона" />
             <div>
@@ -49,7 +54,10 @@ export default function PaymentTemplates() {
 
         <div className={styles.payment_tem_table}>
           <div className={styles.payment_tem_table_item}>
-            <div className={styles.payment_tem_table_item_main}>
+            <div
+              className={styles.payment_tem_table_item_main}
+              onClick={() => handleClick(1)}
+            >
               <div className={styles.payment_tem_table_item_title}>
                 <svg
                   width="30"
@@ -90,7 +98,13 @@ export default function PaymentTemplates() {
               <div className={styles.payment_tem_table_item_actions}>
                 <div>
                   10 000 000 000,00
-                  <span className={styles.gray_text}>UZS</span>
+                  <span
+                    className={styles.gray_text}
+                    style={{ whiteSpace: "pre-wrap" }}
+                  >
+                    {" "}
+                    UZS
+                  </span>
                 </div>
                 <div onClick={() => handleClick(1)}>
                   <svg
@@ -175,7 +189,13 @@ export default function PaymentTemplates() {
               <div className={styles.payment_tem_table_item_actions}>
                 <div>
                   10 000 000 000,00
-                  <span className={styles.gray_text}>UZS</span>
+                  <span
+                    className={styles.gray_text}
+                    style={{ whiteSpace: "pre-wrap" }}
+                  >
+                    {" "}
+                    UZS
+                  </span>
                 </div>
                 <div onClick={() => handleClick(2)}>
                   <svg

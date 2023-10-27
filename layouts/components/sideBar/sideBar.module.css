@@ -88,6 +88,7 @@
 
 .sidebar_menu_wrapper_link {
   display: flex;
+  cursor: pointer;
   align-items: center;
   padding: 20px 0;
   font-size: 17px;
@@ -254,6 +255,10 @@
   .sidebar_bottom .sidebar_bottom_item {
     font-size: 11px;
     gap: 7px;
+  }
+
+  .sidebar_bottom_item:nth-child(2){
+    width: fit-content!important;
   }
 
   .sidebar_bottom_item p {

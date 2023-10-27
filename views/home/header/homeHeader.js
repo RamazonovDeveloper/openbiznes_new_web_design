@@ -6,7 +6,7 @@ export default function HomeHeader() {
     <div className={styles.home_main_header}>
       <div className={styles.home_main_header_texts}>
         <h4>Добрый день, Анна</h4>
-        <p>Посмотрите все финансовые действия по вашей компании</p>
+        <p style={{ whiteSpace: "pre-wrap" }}>Посмотрите  все  финансовые действия по вашей компании</p>
       </div>
       <button className={styles.mainBtn}>
         Создать платеж

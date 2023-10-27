@@ -52,12 +52,12 @@ export default function HomeTransactions() {
               </svg>
             </div>
             <div className={styles.home_main_transactions_table_item_right}>
-              <div>
-                <div>
+              <div className={styles.home_main_transactions_table_item_right_main}>
+                <div className={styles.home_main_transactions_table_item_right_main_left}>
                   <h5>ООО “Наименнование организации”</h5>
                   <p>На счет: 0000 0000 0000 0000</p>
                 </div>
-                <div>
+                <div className={styles.home_main_transactions_table_item_right_main_right}>
                   <h4
                     className={
                       styles.home_main_transactions_table_item_right_status
@@ -100,7 +100,7 @@ export default function HomeTransactions() {
               </svg>
             </div>
             <div className={styles.home_main_transactions_table_item_right}>
-              <div>
+              <div className={styles.home_main_transactions_table_item_right_main}>
                 <div>
                   <h5>ООО “Наименнование организации”</h5>
                   <p>На счет: 0000 0000 0000 0000</p>
@@ -145,7 +145,7 @@ export default function HomeTransactions() {
               </svg>
             </div>
             <div className={styles.home_main_transactions_table_item_right}>
-              <div>
+              <div className={styles.home_main_transactions_table_item_right_main}>
                 <div>
                   <h5>ООО “Наименнование организации”</h5>
                   <p>На счет: 0000 0000 0000 0000</p>

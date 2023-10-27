@@ -266,7 +266,7 @@ export default function EmployeeTable({ addEmp, setAddEmp }) {
             Главный бухгалтер
           </div>
           <div>Андреева Кристина Сергеевна</div>
-          <div>15.06.2023 14:12</div>
+          <div style={{ whiteSpace: "pre-wrap" }}>{"15.06.2023      14:12"}</div>
           <div className={styles.table_item_actions}>
             <div className={styles.table_item_actions_wrapper}>
               <span className={styles.table_item_actions_status}></span>Активен
@@ -445,7 +445,7 @@ export default function EmployeeTable({ addEmp, setAddEmp }) {
             Главный бухгалтер
           </div>
           <div>Андреева Кристина Сергеевна</div>
-          <div>15.06.2023 14:12</div>
+          <div style={{ whiteSpace: "pre-wrap" }}>{"15.06.2023      14:12"}</div>
           <div className={styles.table_item_actions}>
             <div className={styles.table_item_actions_wrapper}>
               <span className={styles.table_item_actions_status_banned}></span>

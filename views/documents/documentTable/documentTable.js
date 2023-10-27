@@ -65,7 +65,7 @@ export default function DocumentTable() {
               </div>
             </div>
             <div>ООО “Компания”</div>
-            <div>10 000 000 000,00 UZS</div>
+            <div>Кредитный договор</div>
             <div>Фамилия И.О.</div>
             <div className={styles.table_data_item_main_actions}>
               <div className={styles.status_text}>
@@ -134,7 +134,7 @@ export default function DocumentTable() {
               </div>
             </div>
             <div>ООО “Компания”</div>
-            <div>10 000 000 000,00 UZS</div>
+            <div>Кредитный договор</div>
             <div>Фамилия И.О.</div>
             <div className={styles.table_data_item_main_actions}>
               <div className={styles.status_text}>
@@ -338,7 +338,7 @@ export default function DocumentTable() {
               </div>
             </div>
             <div>ООО “Компания”</div>
-            <div>10 000 000 000,00 UZS</div>
+            <div>Кредитный договор</div>
             <div>Фамилия И.О.</div>
             <div className={styles.table_data_item_main_actions}>
               <div className={styles.status_text}>
