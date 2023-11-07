@@ -24,7 +24,7 @@ function AppBar({ isTitle }) {
           </div>
           <div className={styles.home_navbar_balance_in_uzs}>
             <div className={styles.home_navbar_balance_in_uzs_wrapper}>
-              <h4 style={{ whiteSpace: "pre-wrap" }}>20 000  000,00   USD </h4>
+              <h4 style={{ whiteSpace: "pre-wrap" }}>20 000  000,00    USD </h4>
               <p>Средств на USD счетах</p>
             </div>
           </div>

@@ -21,7 +21,7 @@
 
 .table_header {
   display: grid;
-  grid-template-columns: 20.8% 29.5% 24% 10.1% 15.5%;
+  grid-template-columns: 20.8% 29.54% 23.94% 10.2% 15.5%;
   /* 
     1442px
 
@@ -69,7 +69,8 @@
 
 .table_data_item_main {
   display: grid;
-  grid-template-columns: 20.8% 29.5% 24% 10.2% 15.5%;
+  grid-template-columns: 20.8% 29.54% 23.94% 10.2% 15.5%;
+  /* grid-template-columns: 20.8% 29.54% 24% 10.2% 15.5%; */
   padding: 12px 0 11px;
   border-bottom: 1px solid #eeeeee;
 }

@@ -7,10 +7,10 @@
   color: #342c2c;
   border: 1px solid #d2d0d0;
   background-color: #eeeeee99;
-  padding: 0 10px;
+  padding: 0 9px;
   border-radius: 5px;
   position: relative;
-  min-width: 157px;
+  min-width: 190px;
   box-sizing: border-box;
   height: 40px;
   display: flex;
@@ -118,10 +118,19 @@
   border-radius: 5px;
 }
 
+.accounts_input_modal_btns_btn:hover{
+  color: #4E0F8A;
+}
+
 .accounts_input_modal_btns_btn_gray {
   background-color: #e8e8e8;
   color: #342c2c;
   margin-left: 10px;
+}
+
+.accounts_input_modal_btns_btn_gray:hover{
+  color: #342c2c;
+  background-color: #D2D0D0;
 }
 
 .accounts_input_modal_item_modal_item,

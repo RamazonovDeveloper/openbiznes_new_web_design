@@ -24,6 +24,24 @@ export default function TransactionsPage() {
             <AllAccountsInput />
             <AllContragentsInput />
             <AllTransactionsInput />
+
+            <div className={styles.payment_tem_filters_search}>
+              <input type="text" placeholder="Поиск   " />
+              <div>
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5799 1.44C6.07805 1.44 2.41992 5.09813 2.41992 9.6C2.41992 14.1019 6.07805 17.76 10.5799 17.76C12.3612 17.76 14.0074 17.1863 15.3499 16.215L21.6649 22.515L23.0149 21.165L16.7749 14.91C18.0012 13.4813 18.7399 11.6269 18.7399 9.6C18.7399 5.09813 15.0818 1.44 10.5799 1.44ZM10.5799 2.4C14.5624 2.4 17.7799 5.6175 17.7799 9.6C17.7799 13.5825 14.5624 16.8 10.5799 16.8C6.59742 16.8 3.37992 13.5825 3.37992 9.6C3.37992 5.6175 6.59742 2.4 10.5799 2.4Z"
+                    fill="#342C2C"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
           <div className={styles.transaction_table}>
             <div className="">

@@ -175,7 +175,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   display: grid;
-  grid-template-columns: 19.46% 17.7% 18.2% 20.7% 9.3% 16.16%;
+  grid-template-columns: 19.42% 17.7% 18.27% calc(20.65%) 9.3% 16.16%;
   /* grid-template-columns: 19.66% 17.7% 18% 20.7% 9.3% 16.16%; */
   /* grid-template-columns: 20.66% 16.99% 17.47% 19.83% 8.89% 16.16%; */
   background-color: #eeeeee99;
@@ -203,7 +203,7 @@
   display: grid;
   /* grid-template-columns: 20.66% 16.99% 17.47% 19.83% 8.89% 13.04% 15px; */
   /* grid-template-columns: 19.66% 17.7% 18% 20.7% 9.3% 13.5% 20px; */
-  grid-template-columns: 19.46% 17.7% 18.2% 20.7% 9.3% 13.5% 20px;
+  grid-template-columns: 19.46% 17.7% 18.2% 20.7% 9.3% 13.35% 20px;
 
   margin-top: 10px;
   padding: 12px 30px 11px;

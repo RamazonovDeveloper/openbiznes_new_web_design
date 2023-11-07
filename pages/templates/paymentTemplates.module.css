@@ -12,7 +12,7 @@
   align-items: center;
   border: 1px solid #d2d0d0;
   border-radius: 5px;
-  padding: 0px 10px;
+  padding: 0px 9px;
 }
 
 .payment_tem_filters_search input {
@@ -57,7 +57,7 @@
 
   display: grid;
   /* grid-template-columns: 19.4% 64.8% 14.8%; */
-  grid-template-columns: 19.4% 66.8% 13.8%;
+  grid-template-columns: 19.4% 66.9% 13.8%;
 
   /* 
     1442 - 60 = 1382

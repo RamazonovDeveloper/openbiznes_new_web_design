@@ -17,11 +17,38 @@
   display: grid;
   grid-template-columns: 19.4% 66.4% 14.2%;
   border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
 }
 
 /* .transaction_table_item:last-child{
   border: none;
 } */
+
+.payment_tem_filters_search {
+  width: 279.5px;
+  height: 40px;
+  background-color: #eeeeee99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d2d0d0;
+  border-radius: 5px;
+  padding: 0px 9px;
+}
+
+.payment_tem_filters_search input {
+  border: none;
+  background-color: transparent;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.07800000160932541px;
+  text-align: left;
+  color: #342c2c;
+  flex-grow: 1;
+  outline: none;
+}
 
 .transaction_table_item_active {
   background-color: #eeeeee99;
@@ -50,6 +77,12 @@
 
 .transaction_table_item_left span {
   color: #a5a1a1;
+}
+
+.transaction_table_item_left > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .transaction_table_item_middle {
@@ -92,7 +125,7 @@
   content: "";
   width: 8px;
   height: 8px;
-  background-color: #2DC28D;
+  background-color: #2dc28d;
   position: absolute;
   top: calc(50% - 5px);
   left: -18px;
